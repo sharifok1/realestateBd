@@ -1,0 +1,65 @@
+.careerBanner{
+    background-image: url('../../../asset/joinWithUs.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 60vh;
+    position: relative;
+}
+.careerBanner p{
+ position: absolute;
+  top:40%;
+  left: 5%;
+  color: #000;
+  font-size: 50px;
+  z-index: 2;
+  /* font-weight: 800; */
+  font-weight: bolder !important;
+}
+.job-card-section{
+  background-image: url('../../../asset/landowner.svg');
+}
+.job-card{
+  box-shadow: 0 0 20px 1px #aaa;
+  padding: 20px;
+  background-color: #fff;
+  transition: .5s;
+}
+
+.job-card h6{
+  font-weight: 600;
+  font-size: 20px;
+}
+.job-card h4{
+  font-weight: 600;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.job-card:hover{ 
+  background-color: #003a71;
+  transition: .5s;
+}
+.job-card:hover h6{ 
+  transition: .5s;
+  color:#fff
+}
+.job-card:hover h4{ 
+  transition: .5s;
+  color:#fff
+}
+.job-details-btn{
+  background-color: transparent;
+  padding:5px 20px;
+  font-size: large;
+  font-weight:bold;
+  border:2px solid rgb(14, 179, 28);
+  margin-top: 20px;
+}
+.job-details-btn:hover{
+background-color:rgb(14, 179, 28);
+transition: .5s;
+}
+.job-card:hover .job-details-btn{ 
+  transition: .5s;
+  color:#fff
+}

@@ -1,0 +1,33 @@
+.field-wraper{
+    display: flex;
+}
+.allProjects-search-field{
+    position: relative;
+    width: 100%;
+    margin:50px 20px;
+    padding:10px 20px;
+    outline: none;
+    border: 1px solid #000000;
+}
+.allProjects-search-field option{
+    padding:10 0px;
+    background-color: #e7e7e7;
+    margin: 10px;
+}
+.slider-card:hover .allproject-img-overlay{
+    display: block;
+    transition: .5s;
+}
+.allproject-img-overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    background-color:#0a365f69;
+    transform: scale(.5);
+    animation: .3s slideIn ease-in-out forwards, .5s skewBg ease-in-out;
+}

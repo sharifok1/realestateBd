@@ -1,0 +1,23 @@
+.about-banner{
+    background-image: url('../../../asset/aboutSectionBg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+.about-banner p{
+    position: absolute;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: 800;
+}
+@media only screen  and (max-width:762px){
+    .about-banner{
+        height: 30vh;
+    }
+    .about-banner p{
+        font-size: 30px;
+        font-weight: 800;
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,21 @@
+.team-banner{
+    height: 50vh;
+    position: relative;
+}
+.team-banner p{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    font-size: 50px;
+    font-weight: 800;
+}
+@media only screen  and (max-width:762px){
+    .team-banner{
+        height: 30vh;
+    }
+    .team-banner p{
+        font-size: 30px;
+        font-weight: 800;
+        padding-left: 20px;
+    }
+}

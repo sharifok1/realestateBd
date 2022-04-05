@@ -1,0 +1,84 @@
+h1{
+    text-align:center;
+}
+.acc-radio {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    
+}
+.accordion-wrapper {
+    position:relative;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 60%;
+    /* margin:0 auto; */
+}
+.accordion {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: rgb(10, 0, 0);
+    overflow: hidden;
+    margin-bottom: 16px;
+    z-index: 1;
+}
+.accordion:last-child{
+    margin-bottom: 0;
+}
+.accordion-label {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    padding-left: 32px;
+    background: rgb(208, 237, 238);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.accordion-label::after {
+    content: "\276F";
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.accordion-content {
+    max-height: 0;
+    padding: 0 32px;
+    color: rgba(4,57,94,1);
+    /* background: rgb(208, 237, 238); */
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.accordion-content p{
+    margin: 0;
+    color: rgba(4,57,94,.7);
+    font-size: 18px;
+}
+.acc-radio:checked + .accordion-label {
+    background:rgb(208, 237, 238);
+}
+.acc-radio:checked + .accordion-label::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.acc-radio:checked ~ .accordion-content {
+    max-height: 100vh;
+    padding: 16px;
+}
+  
+@media only screen and (max-width:979px) {
+    .accordion-wrapper {
+        position:relative;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 90%;
+        margin:0 auto;
+        padding-bottom: 50px;
+    }
+}

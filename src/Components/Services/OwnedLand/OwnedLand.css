@@ -1,0 +1,25 @@
+.wonland-wraper{
+    display: flex;
+    align-items: center;
+}
+.wonland-section{
+    background-color: #f8f8f8;
+}
+.wonland-wraper .left{
+    width: 50%;
+}
+.wonland-wraper .right{
+    width: 50%;
+}
+@media only screen and (max-width:762px){
+    .wonland-wraper{
+       flex-direction:column-reverse;
+       padding: 50px 10px;
+    } 
+    .wonland-wraper .left{
+        width: 100%;
+    }
+    .wonland-wraper .right{
+        width: 100%;
+    }
+}

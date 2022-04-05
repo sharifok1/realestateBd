@@ -1,0 +1,38 @@
+.blog-banner{
+    background-image: url('../../../asset/blogBanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left top;
+    height: 60vh;
+}
+.blog-card{
+   height: 600px;
+   position: relative;
+}
+.blog-banner p {
+    position: absolute;
+    top:40vh;
+    left: 5%;
+    font-size: 40px;
+    font-weight: 800;
+}
+.blog-explore-btn{
+    position: absolute;
+    padding: 5px 20px;
+    font-size: large;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: .5s;
+    bottom: 20px;
+}
+.blog-explore-btn:hover{
+    background-color: rgb(76, 114, 184);
+    color: #fff;
+    transition: .5s ease;
+}
+.blog-card-img{
+    max-height: 380px;
+    
+}

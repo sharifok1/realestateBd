@@ -1,0 +1,83 @@
+.wonland-section .venture{
+background-color: #eee;
+}
+.joint-logo-sec .left{
+    padding: 100px;
+}
+.joint-logo-sec .right{
+    padding: 100px;
+}
+.joint-venture-contact-container{
+    background-image: url('../../../asset/landowner.svg');
+}
+.joint-contact-heading{
+    color:#000;
+    margin-bottom: -40px;
+    padding-top: 50px;
+    font-weight: 800;
+}
+.jointVentureContuct{   
+    display: flex;
+    padding: 80px 0;  
+}
+.jointVentureContuct .left{
+    width: 40%;
+    background-color: #eee;
+    box-shadow: 0 0 10px 5px #ccc;
+}
+.jointVentureContuct .right{
+    width: 60%;
+}
+.venture-contactUs-wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.venture-contactUs-field{
+ width: 80%;
+ margin:10px 5px;
+ padding: 10px;
+ cursor: text;
+}
+.venture-contactUs-btn{
+    align-self: flex-start;
+    margin-left: 10%;
+    padding: 5px 15px;
+    background-color: #fff;
+    border:1px solid #000;
+    margin-top: 15px;
+}
+@media only screen and (max-width:979px){
+    .joint-logo-sec .left{
+        padding: 10px;
+    }
+    .joint-logo-sec .right{
+        padding: 10px;
+    }
+    .jointVentureContuct .left{
+        width: 100%;
+        padding: 50px 0;
+    }
+    .jointVentureContuct .right{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .jointVentureContuct{
+        padding: 50px 10px;
+        flex-direction: column;
+    }
+    .venture-contactUs-field{
+        width: 95%;
+        /* margin:10px 5px; */
+        padding: 10px;
+       }
+       .venture-contactUs-btn{
+        margin-left: 2.5%;
+    }
+    .joint-contact-heading{
+       padding-left: 5%;
+       padding-bottom: 20px;
+    }
+}
+
+/* joint venture// */

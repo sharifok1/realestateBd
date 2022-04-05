@@ -1,0 +1,60 @@
+.about-card{
+    background-image: url('../../../asset/landowner.svg');
+    padding-bottom: 50px;
+}
+.about-left-right-card-wraper{
+    color:#000;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    padding: 80px 20px;
+    margin-top: 40px;
+}
+.about-card-pair{
+    border: 1px solid #000;
+    max-width: 43%;
+    padding: 50px 20px;
+    font-size:30px;
+    font-weight: 800;
+}
+.card-small{
+    font-size: 16px;
+    padding:40px 0;
+    padding-bottom: 10px;
+    color:#0055a4;
+}
+.long-card-wrapper{
+    border: 1px solid #111;
+    padding-bottom: 20px;
+    padding:0 30px;
+    padding-right: 20px;
+    margin:0 20px;
+}
+.text-list{ 
+    color:#111;
+    font-size: 18px;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 40px;
+}
+
+@media only screen and (max-width:992px){
+    .about-left-right-card-wraper{
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+    .about-card-pair{
+        max-width: 100%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: 40px;
+    }
+    .long-card-wrapper{
+        margin:10px;
+        padding: 10px;
+    }
+    .text-list{
+        grid-template-columns: 1fr;
+    }
+}

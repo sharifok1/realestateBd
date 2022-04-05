@@ -1,0 +1,30 @@
+.play-btn{
+    position: absolute;
+    left: 45%;
+    top:48%;
+    border: none;
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+    border-radius: 50%;
+    padding-left: 5px;
+    color: rgba(255, 255, 255, 0.801);
+    box-shadow: 0 0 5px 5px rgb(121, 116, 116);
+    background-color: #003a71ad;
+}
+.modal-content{
+    height: auto;
+    width: auto;
+}
+.about-more-btn{
+    border:2px solid #222;
+    background-color: transparent;
+    padding: 8px 12px;
+    font-size: large;
+    font-weight: 500;
+}
+.about-more-btn:hover{
+    color: #fff;
+    background-color: #003a71;
+    transition: .5s ease-in-out;
+}

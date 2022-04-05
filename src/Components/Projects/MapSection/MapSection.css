@@ -1,0 +1,34 @@
+
+.mapSection-wraper{
+    display: flex;
+}
+.map-left{
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 100px;
+    background-color: #eee;
+}
+.map-right{
+    width: 60%;
+    height: 50vh;
+}
+@media only screen and (max-width:992px){
+    .mapSection-wraper{
+        flex-direction: column;
+    }
+    .map-left{
+        width: 100%;
+        padding:10px;
+        padding-top: 50px;
+        height: 40vh;
+    }
+    .map-right{
+        width: 100%;
+    }
+}

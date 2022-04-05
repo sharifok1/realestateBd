@@ -1,0 +1,17 @@
+.buyer{
+    background-image: url('https://edisonrealestatebd.com/admin/uploads/page/buyer/1920x562/16147660310Bomo_l.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 60vh;
+    position: relative;
+}
+.buyer p{
+    position: absolute;
+     top:70%;
+     left: 5%;
+     color: rgb(250, 250, 250);
+     font-size: 50px;
+     z-index: 2;
+     font-weight: bolder !important;
+   }

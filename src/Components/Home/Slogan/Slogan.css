@@ -1,0 +1,69 @@
+.slogan{
+    background-image: url('https://edisonrealestatebd.com/themes/cms/assets/images/static/landowner.svg');
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+}
+.slogan-left{
+    background-image: url('../../../asset//slogansec.jpeg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin-top: 30px;
+    padding:80px 20px;
+}
+.slogan-left h1{
+    font-weight: 800;
+    font-size: 30px;
+}
+.slogan-left h4{
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 20px;
+}
+/* .slogan-card{
+    height: 455px;
+}
+.right-card{
+    min-height: 455px !important;
+} */
+.right-card{
+    height: 94%;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+}
+.right-card h1{
+    color:rgb(34, 34, 34) !important;
+    font-weight: 800;
+    margin-left: 5%;
+}
+.right-card h5{
+    color:rgb(56, 56, 56) !important;
+    font-weight: 500;
+    margin-left: 5%;
+}
+.right-card h6{
+    color:#000 !important;
+    font-weight: 500;
+    margin-left: 5%;
+}
+.coma1{
+    font-size: 150px;
+    color:rgb(95, 95, 95);
+    position: absolute;
+    left:10px;
+    margin-top: -60px;
+}
+.coma2{
+    font-size: 150px;
+    color:rgb(95, 95, 95);
+    position: absolute;
+    margin-top: 0px;
+}

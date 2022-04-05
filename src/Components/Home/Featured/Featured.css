@@ -1,0 +1,177 @@
+.featurs{
+    background-color: rgb(229, 232, 235);
+    margin:50px 0 ;
+    padding: 100px 0;
+    margin-bottom:0 ;
+}
+
+/*--------- slider/// */
+.swiper {
+    position: relative !important;
+    width: 100%;
+    height: 100%;
+    /* paddi: 50px; */
+  }
+  
+  .swiper-slide {
+      margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    backface-visibility: hidden;
+  }
+
+  .slider-card-img::after{
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 500px;
+      background-color: rgba(0, 0, 0, 0.712);
+      left:50%;
+  }
+/* -------------------slider end/   */
+
+/* slider card// */
+.slider-card{
+    position: relative;
+    /* transition: 1s ease-in-out 1s; */
+    
+}
+.slider-text-div{
+    text-align: left;
+    padding-right: 50px;
+    padding-left: 20px;
+    transition: 1s ease-in-out .5s;
+}
+.card-heading{
+    font-weight: 800;
+    font-size: 35px;
+}
+.slider-text-div{
+    position: absolute;
+    bottom:-200px;
+    transition: .5s ease;
+}
+ .card-name{
+    margin-bottom: 180px;
+    transition: .5s ease;
+}
+.slider-card:hover .card-name,
+.slider-card:hover .slider-text-div {
+    margin-bottom: 40px;
+    bottom:100px;
+    transition: .5s ease-in-out;
+    display: block;
+}
+.slider-card:hover .img-overlay{
+    display: block;
+    transition: .5s;
+}
+.img-overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    background-color:#0a365f69;
+    transform: scale(.5);
+    animation: .3s slideIn ease-in-out forwards, .5s skewBg ease-in-out;
+}
+.btn-position{
+    position: absolute;
+    bottom:20px;
+    left: 20px;
+    border: 2px solid #fff;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    right:10px;
+    padding: 30px;
+    color: rgb(255, 255, 255) !important;
+    /* fill: black !important; */
+    /* stroke: black !important; */
+    border-radius: 50%;
+    position: absolute !important;
+    top:0;
+    height: 40px !important;
+    width: 40px !important;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 10px !important;
+   /* border: 10px solid rgb(255, 255, 255); */
+   box-shadow: 0 0 2px 2px #000;
+    overflow: hidden;
+    top:60px;
+}
+.swiper-button-next{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+    background-position:right;
+    background-position:center;
+    background-position-x:left !important;
+    background-size:cover;
+    left: 80px;
+}
+.swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+    background-position:right;
+    background-position:center;
+    background-position-x:left !important;
+    background-size:cover;
+    right: 0 !important;
+    /* left:100px !important; */
+}
+
+
+/* animation button secondary// */
+.btn-secondary {
+    padding: 10px 50px;
+    z-index: 1;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: transparent;
+  }
+  
+  .btn-secondary::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(7, 76, 122);
+    border-color: rgb(7, 76, 122);
+    border-radius: 0;
+    z-index: -1;
+    transition: 0.4s;
+  }
+  .btn-secondary:hover::after {
+    width: 100%;
+  }
+  

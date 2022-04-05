@@ -1,0 +1,22 @@
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+body {
+  font-family: "Sofia Pro";
+}
+.naveLogo{
+  position: static;
+  z-index: 999999999;
+  padding: 20px 40px;
+  top: 0;
+  left: 0;
+}
+.nav-wraper{
+  background-color: rgba(0, 0, 0, 0.456) !important;
+  width: 100vw;
+  position: fixed;
+  height: 80px;
+  z-index: 9999999;
+}
+.manu-icon{
+  position: static;
+}
+/* manu icon/// */

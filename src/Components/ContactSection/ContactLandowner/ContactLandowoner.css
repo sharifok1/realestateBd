@@ -1,0 +1,115 @@
+.landWoner{
+    background-image: url('https://edisonrealestatebd.com/admin/uploads/page/landowner/1920x562/1614765844pVfh9_l.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 60vh;
+    position: relative;
+}
+.landWoner p{
+    position: absolute;
+     top:70%;
+     left: 5%;
+     color: rgb(250, 250, 250);
+     font-size: 50px;
+     z-index: 2;
+     font-weight: bolder !important;
+   }
+   .contact-topbanner{
+       display: flex;
+       color: #000;
+       justify-content: space-between;
+   }
+  .landwoner-top-left{
+      text-align: left;
+      width: 55%;
+      padding: 5rem;
+  }
+  .landwoner-top-left h1{
+      text-align: left;
+      margin-bottom: 3rem;
+      font-weight: 800;
+      color: #003a71;
+  }
+  .landwoner-top-left p{
+    font-size: 18px;
+  }
+  .landwoner-top-right{
+      text-align: left;
+      width: 45%;
+  }
+  .landwoner-top-right img{
+      width: 100%; 
+  }
+
+  @media only screen and (max-width:789px) {
+    .contact-topbanner{
+        flex-direction: column;
+    }
+   .landwoner-top-left{
+       text-align: left;
+       width:100%;
+       padding: 1rem;
+   }
+   .landwoner-top-right{
+       text-align: left;
+       width: 100%;
+       padding: 1rem;
+   }
+   .landwoner-top-right img{
+       width: 100%; 
+   }
+   .landWoner p{
+    position: absolute;
+     top:70%;
+     left: 1rem;
+     color: rgb(250, 250, 250);
+     font-size: 30px;
+     z-index: 2;
+     font-weight: bolder !important;
+   }
+}
+
+.from-heading{
+    padding: 3rem 0;
+    color: #000;
+    font-weight: 800;
+}
+.from-heading h1{
+    font-weight: 800;
+    color: #000;
+    text-align: left;
+}
+.contactUs-from-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.contactUs-field-landInfo{
+    padding: 10px;
+    margin: 10px 10px;
+}
+.heading-two{
+ color: #000;
+ padding-left: 10px;
+ padding-top: 3rem;
+ font-weight: 800;
+}
+.contactUs-btn-land{
+    padding: 6px 20px;
+    margin: 10px;
+    font-size: large;
+    font-weight: 700;
+    background-color: #fff;
+    border: 2px solid rgb(26, 201, 2);
+}
+.contactUs-btn-land:hover{
+    background-color: #003a71;
+    transition: .5s;
+    color:#fff;
+}
+@media only screen and (max-width:979px) {
+    .contactUs-from-one{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
