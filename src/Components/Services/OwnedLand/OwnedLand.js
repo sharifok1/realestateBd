@@ -5,6 +5,7 @@ import wonlanded from '../../../asset/serviceLand.JPG'
 import wonlandedGrap from '../../../asset/wonlandGrap.jpg'
 import './OwnedLand.css'
 import { Container } from 'react-bootstrap';
+import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
 const OwnedLand = () => {
     return (
         <div>
@@ -30,6 +31,7 @@ const OwnedLand = () => {
            </Container>
            </div>
             <Footer/>
+            <FbMsgChat/>
         </div>
     );
 };

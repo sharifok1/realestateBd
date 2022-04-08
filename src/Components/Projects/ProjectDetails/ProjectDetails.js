@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ProgressBar } from 'react-bootstrap';
 
 import { Link, NavLink, useParams } from 'react-router-dom';
+import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
 import Footer from '../../Shared/Footer/Footer';
 import NavBars from '../../Shared/NavBars/NavBars';
 import ProjectSlider from '../../Shared/Slider/ProjectSlider';
@@ -118,6 +119,7 @@ const ProjectDetails = () => {
             <ProjectSlider project={projectId}></ProjectSlider>
             </div>
            <Footer></Footer>
+           <FbMsgChat/>
         </div>
     );
 };

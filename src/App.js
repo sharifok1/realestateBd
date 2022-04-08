@@ -16,6 +16,7 @@ import ProjectDetails from './Components/Projects/ProjectDetails/ProjectDetails'
 import ProjectsParents from './Components/Projects/ProjectsParents/ProjectsParents';
 import JointVenture from './Components/Services/JointVenture/JointVenture';
 import OwnedLand from './Components/Services/OwnedLand/OwnedLand';
+import FbMsgChat from './Components/Shared/FbMessengerChat/FbMsgChat';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
      <Route path="/contact" element={<ContactMain/>}/>
      <Route path="/contactLandowoner" element={<ContactLandowoner/>}/>
      <Route path="/contactBuyer" element={<ContactBuyer/>}/>
+     <Route path="/customerChat" element={<FbMsgChat/>}/>
     </Routes>
     </div>
   );

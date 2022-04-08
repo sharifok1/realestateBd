@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import {  Col, Container, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { Link} from "react-router-dom";
+import FbMsgChat from "../../Shared/FbMessengerChat/FbMsgChat";
 import Footer from "../../Shared/Footer/Footer";
 import './AllProjects.css'
 
@@ -86,6 +87,7 @@ const AllProjects = () => {
         </Container>
         </div>
         <Footer></Footer>
+        <FbMsgChat/>
        </div>
     );
 };

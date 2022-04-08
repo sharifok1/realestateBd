@@ -8,6 +8,7 @@ import businessOff from '../../../asset/businessOfficer.jpg'
 import fullTeam from '../../../asset/fullTeam.jpg'
 import './OurTeam.css'
 import NavBars from '../../Shared/NavBars/NavBars';
+import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
 const OurTeam = () => {
     return (
         <div>
@@ -68,6 +69,7 @@ const OurTeam = () => {
                 </div>
           </Container>
            <Footer></Footer>
+           <FbMsgChat/>
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
 import Footer from '../../Shared/Footer/Footer';
 import NavBars from '../../Shared/NavBars/NavBars';
 import AboutBanner from '../AboutBanner/AboutBanner';
@@ -19,6 +20,7 @@ const AboutParents = () => {
             <TimeLine/>
             <ManagementTeam/>
             <Footer/>
+            <FbMsgChat/>
         </div>
     );
 };

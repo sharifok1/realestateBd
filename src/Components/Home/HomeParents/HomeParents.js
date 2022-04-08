@@ -6,6 +6,7 @@ import HomeModal from '../HomeModal/HomeModal';
 import Featured from '../Featured/Featured';
 import Slogan from '../Slogan/Slogan';
 import Footer from '../../Shared/Footer/Footer';
+import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
 
 // import Modal from '../Modal/Modal';
 
@@ -18,8 +19,8 @@ const HomeParents = () => {
             <About/>
              <Featured/>
              <Slogan/>
-           
              <Footer/>
+             <FbMsgChat/>
             
         </div>
     );

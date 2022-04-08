@@ -271,7 +271,7 @@ nav a {
   text-decoration: none; 
 }
 nav a:hover { 
-  color:blue; 
+  color:#aaa; 
 }
 nav ul,
 nav ul li { list-style-type: none; padding: 0; margin: 0; }
