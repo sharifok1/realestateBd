@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-import projectpic1 from '../../../asset/project1.jpg'
-import projectpic2 from '../../../asset/project2.jpg'
-import projectpic3 from '../../../asset/project3.jpg'
+import './Slider.css'
 import {Autoplay, Pagination, Navigation } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { NavLink } from 'react-router-dom';
+
+// eslint-disable-next-line react-hooks/rules-of-hooks
+
+
 const ProjectSlider = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(()=>{
+  const url = 'http://localhost:3000/projects.json';
+    fetch(url)
+   .then(res=>res.json())
+   .then(data=> setProjects(data))
+  },[])
+
+console.log(projects)
+
     return (
         <div className='pb-5'>
         <Swiper
@@ -21,10 +34,10 @@ const ProjectSlider = () => {
             pagination={{
             clickable: true,
             }}
-            autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-              }}
+            // autoplay={{
+            //     delay: 5000,
+            //     disableOnInteraction: false,
+            //   }}
             navigation={true}
             modules={[Autoplay,Pagination, Navigation]}
             breakpoints={{
@@ -47,72 +60,39 @@ const ProjectSlider = () => {
               }}
             className="mySwiper px-3"
         >
-            <SwiperSlide>
-             <div className="slider-card">
-             <img className="card-img-slider" style={{height:'600px'}} src={projectpic1} alt="" />
-             <div className="img-overlay"></div>
-              <div className="slider-text-div">
-                   <div className="mb-4">
-                        <div className="card-name">
-                          <h1 className="card-heading">DOMICILE ROSALIND </h1>
-                          <h3 >Bashundhara R/A</h3>
-                        </div>
-                         <p>
-                      Submerged in utmost security and splendour, Edison Castalia is positioned carefully to facilitate maximum wellbeing in terms of the multifaceted amenities that it offers. 
-                   </p>
-                   </div>       
-                   
-              </div>
-              <NavLink to={`/details/p1`}>
-             <button className="btn-secondary mb-4 mt-3 btn-position" variant="primary" style={{backgroundColor:'transparent !important'}}>Explore</button> 
-             </NavLink>
-             </div>
-            </SwiperSlide>
 
-            <SwiperSlide>
-             <div className="slider-card">
-                    <img className="slider-card-img" src={projectpic2} alt="" />
-                    <div className="img-overlay"></div>
-              <div className="slider-text-div">
-                   <div className="mb-4">
-                   <div className="card-name">
-                          <h1 className="card-heading">DOMICILE ROSALIND </h1>
-                          <h3 >Bashundhara R/A</h3>
-                        </div>
-                         <p>
-                      Submerged in utmost security and splendour, Edison Castalia is positioned carefully to facilitate maximum wellbeing in terms of the multifaceted amenities that it offers. 
-                   </p>
-                   </div>
-                                         
-              </div> 
-              <NavLink to={`/details/p2`}>
-             <button className="btn-secondary mb-4 mt-3 btn-position" variant="primary" style={{backgroundColor:'transparent !important'}}>Explore</button> 
-             </NavLink>
-             </div>
-            </SwiperSlide>
-        
-            <SwiperSlide>
-             <div className="slider-card">
-             <img style={{height:'600px'}} src={projectpic3} alt="" />
-             <div className="img-overlay"></div>
-              <div className="slider-text-div">
-                   <div className="mb-4">
-                   <div className="card-name">
-                          <h1 className="card-heading">DOMICILE ROSALIND </h1>
-                          <h3 >Bashundhara R/A</h3>
-                        </div>
-                         <p>
-                      Submerged in utmost security and splendour, Edison Castalia is positioned carefully to facilitate maximum wellbeing in terms of the multifaceted amenities that it offers. 
-                   </p>
-                   </div>
-                  
+          {
+            projects?.map(myProject=><SwiperSlide>
+
+              
+              <div className="slider-card">
+              <img className="card-img-slider" style={{height:'600px'}} src={myProject?.projectImage} alt="" />
+              <div className="img-overlay"></div>
+               <div className="slider-text-div">
+                    <div className="mb-4">
+                         <div className="card-name">
+                           <h1 className="card-heading">{myProject?.projectName}</h1>
+                           <h3 >{myProject?.projectName}</h3>
+                         </div>
+                          <p>
+                          {myProject?.description.slice(0,150)} . . .
+                        </p>
+                        </div>       
+                    
+               </div>
+               <NavLink to={`/details/${myProject?.id}`}>
+              <button className="btn-secondary mb-4 mt-3 btn-position" variant="primary" style={{backgroundColor:'transparent !important'}}>Explore</button> 
+              </NavLink>
               </div>
-             </div>
-             <NavLink to={`/details/p3`}>
-             <button className="btn-secondary mb-4 mt-3 btn-position" variant="primary" style={{backgroundColor:'transparent !important'}}>Explore</button> 
-             </NavLink>
-             
-            </SwiperSlide>
+             </SwiperSlide>
+
+
+            )
+
+          }
+
+
+            
         
         </Swiper>
         </div>

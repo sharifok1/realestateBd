@@ -61,8 +61,9 @@ const AllProjects = () => {
         {
             projects.map((project)=><div
             key={project.id}
+           
             >
-                 <Col className="slider-card">
+                 <Col className="slider-card" >
                             <img
                              className="slider-card-img img-fluid" 
                              src={project.projectImage} alt="" />

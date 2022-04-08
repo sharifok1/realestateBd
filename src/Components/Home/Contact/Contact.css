@@ -7,6 +7,9 @@
     padding-top: 30px;
     padding-bottom: 117px;
 }
+.contact-booking-from{
+    height: 480px !important;
+}
 .home-contact-input{
     width: 80%;
     margin: 10px 0;
@@ -36,10 +39,16 @@
 
 }
 .counter-wraper{
-    position: absolute;
+    position:relative;
     width: 100%;
     top:0;
     padding: 50px;
+   
+}
+.meeting-heading{
+    color: rgb(25, 3, 106);
+    font-weight: 800;
+    padding-top: 10px;
 }
 .count-work{
     border-top: 1px solid #fff;
@@ -57,3 +66,31 @@
     height: 100%;
     background-color: aliceblue;
 } */
+.booking-baackground{
+    color: #000;
+    background-image:url('../../../asset/bookingApp.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 480px;
+}
+@media only screen and (max-width:979px){
+    .counter-wraper{
+     padding-bottom: 50px !important;
+     height: auto !important;
+    }
+    .contact-booking-from{
+        height: auto !important;
+    }
+    .booking-baackground{
+        height: auto;
+    }
+    .count-work{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .counter-wraper{
+        padding: 10px;
+       
+    }
+}

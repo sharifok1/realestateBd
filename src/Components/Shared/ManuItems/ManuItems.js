@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './ManuItems.css'
+import  building from '../../../asset/buildingTech.png'
 
 const ManuItems = () => {
     return (
@@ -14,20 +15,16 @@ const ManuItems = () => {
                         </label>
                     <aside>
                         <div class="aside-section aside-left">
+                            <div className='buildingTec'>
+                                <img src={building} alt="" />
+                            </div>
+                        <a href="tel:0123" className='make-call-btn'><i class="fa-solid fa-circle-phone"></i> TALK WITH OUR TEAM</a>
                            <div class="aside-content">
-                           <div class="words word-1">
-                                <span>DO</span>
-                                <span>MI</span>
-                                <span>CI</span>
-                                <span>LE</span>
-                                </div>
+                                <p className='aside-contact-head'>CONTACT</p>
+                               <p> PHONE: +88018********</p>
+                               <p>EMAIL: domicileltdweb@gmail.com</p>
+                               <p>HOURS: 9am - 4pm MONDAY-FRIDAY</p> 
 
-                                <div class="words word-3">
-                                <span>DESIGN</span>
-                                <span>& </span>
-                                <span>BUILDERS</span>
-                                <span>LTD</span>
-                                </div>
                           </div>
                         </div>
 
@@ -54,7 +51,7 @@ const ManuItems = () => {
                                     </li>
 
                                     <li class="sub-menu-parent" tab-index="0">
-                                    <a className='aside-anchor' style={{cursor:'pointer'}}>Services</a>
+                                    <a href='#/' className='aside-anchor' style={{cursor:'pointer'}}>Services</a>
                                     <ul class="sub-menu">
                                         <li><NavLink to="/ownedLand">Owned Land</NavLink></li>
                                         <li><NavLink to="/jointVenture">Joint Venture</NavLink></li>

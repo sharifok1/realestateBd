@@ -115,7 +115,7 @@ const ProjectDetails = () => {
                     }}
                     >RELATED PROJECTS
                     </h1>
-            <ProjectSlider></ProjectSlider>
+            <ProjectSlider project={projectId}></ProjectSlider>
             </div>
            <Footer></Footer>
         </div>

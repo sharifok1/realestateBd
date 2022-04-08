@@ -1,11 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 .footer{
-    background-image: url('https://edisonrealestatebd.com/themes/cms/assets/images/static/footer.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    
+    position: absolute;
+   background: #7e765b ;
+   height: auto;
+   width: 100%;
+   z-index: 0;
 }
-.footer-top{
-  
+.footer-1st-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.footer-1st-part ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-1st-part li{
+    transition: 1s ease-in-out;
+}
+.footer-nav{
+   font-size: 20px;
+   font-weight: 700;
+   margin: 40px 20px;
+   color: #e8b306;
+}
+.footer-nav:hover{
+   color: #e8b306;
+   transition:1s;
+}
+.footer-nav:hover::before{
+  content: '';
+  position: absolute;
+  background-color: #e8b306;
+  height: 2px;
+  width: 40px;
+  margin-top: 32px;
+  border-radius: 50px;
+  transition:1s;
+}
+.footer-button{
+    background-color: transparent;
+    border: 1px solid #aaa;
+    padding: 10px 20px;
+    color: #eee;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 50px;
+    margin: 20px;
+    margin-top: 50px;
+    z-index: 2;
+    background-color: #7e765b;
+    transition: .5s;
+}
+.footer-button:hover{
+    background-color: #2a2a28;
+}
+.footer-btn-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-btn-wraper::before{
+  position: absolute;
+  content: '';
+  background-color: #aaa;
+  height: 1.5px;
+  width: 100%;
+  margin-top: 30px;
+  z-index: -1;
+}
+.footer-last-part{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.footer-last-part p{
+   font-size: 30px;
+   font-weight: 700;
+   font-family: 'Satisfy', cursive;
+}
+
+@media only screen and (max-width:979px){
+    .footer-1st-part{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 100px;
+    }
+    .footer-1st-part ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .footer-nav{
+        font-size: 20px;
+        font-weight: 700;
+        margin: 10px 0px;
+        color: #e8b306;
+        text-align: center;
+        margin-left: -20px;
+     }
+     .footer{
+      height: auto;
+    }
+    .footer-button{
+        padding: 10px 10px;
+        color: #eee;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 50px;
+        margin: 10px;
+        margin-top: 50px;
+        z-index: 2;
+        background-color: #7e765b;
+    }
+    .footer-last-part{
+      flex-direction: column;
+      text-align: center;
+    }
 }
