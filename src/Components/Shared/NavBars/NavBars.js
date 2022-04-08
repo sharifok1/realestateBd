@@ -8,9 +8,9 @@ const NavBars = () => {
         <div className='nav-wrapper'>
            <Navbar>
                 <Navbar.Brand href="/">
-                  {/* <img
-                  className='brand-logo'
-                  src="../../../asset/brand.svg" alt="" /> */}
+                  <img
+                  className='brand-logo img-fluid'
+                  src="https://svgshare.com/i/g4Z.svg" alt="" />
                 </Navbar.Brand>
             </Navbar>
             <ManuItems></ManuItems>

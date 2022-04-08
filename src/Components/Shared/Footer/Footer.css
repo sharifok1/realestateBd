@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 .footer{
-    position: absolute;
+    position: relative;
    background: #7e765b ;
    height: auto;
    width: 100%;
@@ -82,13 +82,24 @@
    font-weight: 700;
    font-family: 'Satisfy', cursive;
 }
-
+.footer-brand{
+    width: 40%;
+}
+.footer-brand-logo{
+    width: 30%;
+}
 @media only screen and (max-width:979px){
     .footer-1st-part{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         padding-top: 100px;
+    }
+    .footer-brand{
+        width: 40%;
+    }
+    .footer-brand-logo{
+        width: 100%;
     }
     .footer-1st-part ul{
         flex-direction: column;

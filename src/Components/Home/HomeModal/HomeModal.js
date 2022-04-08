@@ -54,7 +54,7 @@ const HomeModal = () => {
                             fontWeight:'800',
                             fontFamily:'sofia pro'
                         }}
-                    >DOMICILEDBL DB</h1>
+                    >DOMICILE </h1>
                     <h5 className='text-dark' style={{fontWeight:'800',fontFamily:'sofia pro'}}>FEATURED PROJECTS
                     </h5>
                       </div>
@@ -110,10 +110,12 @@ const HomeModal = () => {
                   </Row>
          </Container>
           <div style={{display:'flex',justifyContent:'center'}}>
+            <NavLink to='/projectsParents'>
           <button 
-         className='btn-primary btn btn-primary'
+         className='btn-primary btn'
           style={{marginTop:'20px'}}>Expolre Now
           </button>
+          </NavLink>
           </div>
          </div>
      

@@ -5,7 +5,7 @@ import './HomeSlider.css'
 
 const HomeSlider = () => {
     return (
-        <div>
+        <div id='home'>
 {/*  
         <header id="showcase">
           <h1>Welcome!</h1>

@@ -8,8 +8,8 @@ const Footer = () => {
        
         <div className='footer'>
            <div className='footer-1st-part'>
-               <div>
-                   <img src='https://edisonrealestatebd.com/themes/cms/assets/images/static/logo.svg' alt="" />
+               <div className='footer-brand'>
+                   <img className='img-fluid footer-brand-logo' src='https://svgshare.com/i/g4Z.svg' alt="" />
                </div>
                <div>
                    <ul>

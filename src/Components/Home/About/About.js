@@ -23,7 +23,7 @@ const About = () => {
       }
 
     return (
-        <div style={{backgroundColor:'#ffffff',padding:'40px 0'}}>
+        <div style={{backgroundColor:'#ffffff',padding:'40px 0'}} id="about">
            <Container >
            <CardGroup >
                 <Card className='border-0 pt-5' style={{backgroundColor:'#fff'}}>
