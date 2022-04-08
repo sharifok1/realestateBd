@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, CardGroup, Container, Modal } from 'react-bootstrap';
 import videoBeg from '../../../asset/video-beg.png'
 import { Link } from 'react-router-dom';
-import 'animate.css';
 import { Fade } from 'react-reveal';
 const About = () => {
     const [modalShow, setModalShow] = React.useState(false);
