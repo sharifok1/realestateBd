@@ -91,11 +91,12 @@ main {
 }
 .buildingTec{
   position: absolute;
-  top: 15%;
-  left: 180px;
+  top: 10%;
+  /* left: 180px; */
+  left: 150px;
 }
 .buildingTec img{
-  width: 60%;
+  width: 70%;
   animation-name: buildingMoved;
   animation-direction:alternate-reverse;
   animation-duration: 10s;
