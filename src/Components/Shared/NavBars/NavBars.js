@@ -7,10 +7,9 @@ const NavBars = () => {
     return (
         <div className='nav-wrapper'>
            <Navbar>
+            {/* <Container> */}
                 <Navbar.Brand href="/">
-                  {/* <img
-                  className='brand-logo'
-                  src="../../../asset/brand.svg" alt="" /> */}
+                    <img src="https://edisonrealestatebd.com/themes/cms/assets/images/static/logo.svg" alt="" />
                 </Navbar.Brand>
             </Navbar>
             <ManuItems></ManuItems>

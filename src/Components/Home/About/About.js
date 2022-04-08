@@ -1,95 +1,60 @@
 import React from 'react';
-import { Card, CardGroup, Container, Modal } from 'react-bootstrap';
-import videoBeg from '../../../asset/video-beg.png'
-import { Link } from 'react-router-dom';
-import 'animate.css';
-import { Fade } from 'react-reveal';
+import { Col, Container, Row,Button } from "react-bootstrap";
+import { Fade } from "react-reveal";
+import './About.css'
+
 const About = () => {
-    const [modalShow, setModalShow] = React.useState(false);
-    function MyVerticallyCenteredModal(props) {
-      
-        return (
-          <Modal  
-            {...props}
-            aria-labelledby="contained-modal-title-vcenter"
-            centered
-          >
-            <Modal.Body className='p-0'>
-          
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/uySn1BZiWWs?start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='true'></iframe>
-            </Modal.Body>
-          </Modal>
-        );
-      }
-
     return (
-        <div style={{backgroundColor:'#ffffff',padding:'40px 0'}}>
-           <Container >
-           <CardGroup >
-                <Card className='border-0 pt-5' style={{backgroundColor:'#fff'}}>
-                    <Card.Body>
-                    <Fade>
-                    <Fade left>
-                    <Card.Title>
-                      <p
-                      style={{
-                        color:'#999',
-                        fontWeight:'700',
-                        fontSize:'25px'
-                      }}
-                      >About Us</p>
-                        <h1
-                        style={{
-                            color:'#003a71',
-                            fontWeight:'800',
-                            textAlign:'left'
-                        }}
-                        className="animate__jackInTheBox"
-                        >REDEFINING YOUR STANDARD OF LIVING</h1>
-                    </Card.Title>
-                    <Card.Text className='text-dark fs-6 pe-2 pt-5'>
-                   <strong>Domiciled EBL BD </strong> <br /> 
-                   DomiciledEBL BD was founded in 2009 with the aim of touching and enhancing all angles of life for the consumers with influential brands, reliable products and consistent services. 
-                   <br />
-                   <br />
-
-                   <strong>Domiciled EBL BD Real state</strong> <br />
-                   DomiciledEBL BD ventured into the real estate sector in 2015 with its “dream team” dedicated to merge value and innovation in the budding real estate sector of Bangladesh. With the primary aim to fulfill client satisfaction through total quality control, design excellence and experience, Edison Real Estate provides state-of-the art modern technology and latest building practices as compared to global standards.
-                    </Card.Text>
-                    <Link to='/aboutParents'> <button className="about-more-btn"> Know More </button></Link>
-                   </Fade>
-                   </Fade>
-                    </Card.Body>
-                    
-                </Card>
-                <Card className='border-0 pt-5' style={{backgroundColor:'#eee'}}>
-                    <Card.Body >
-                        <div>
-                        <Fade>
-                       <Fade right>
-                            <img
-                            className='img-fluid py-md-5 bg-dark'
-                            style={{
-                                height:'500px',
-                                position:'relative'
-                            }}
-                             src={videoBeg} alt="" />
-                             <button className='play-btn'
-                             onClick={() => setModalShow(true)}
-                             ><i class="fa-solid fa-play"></i></button>
-                           
-                            <MyVerticallyCenteredModal
-                                show={modalShow}
-                                onHide={() => setModalShow(false)}
-                            />
-                             </Fade>
-                      </Fade>
-                        </div>
-                    </Card.Body>
-                </Card>
-                
-             </CardGroup>
-           </Container>
+        <div>
+             <div id="about-us">
+      <Container>
+        <Row className='m-0'>
+          <Col lg={6} sm={12} className='px-4'>
+            <div className="aboutUs-text">
+              <Fade left>
+              <p className="about-sub-title">ABOUT US</p>
+              </Fade>
+              <Fade left>
+              <div class = 'about-animation projects'>
+              <h1 className='design-text'>
+                REDEFINING YOUR <br /> STANDARD OF LIVING
+              </h1>
+              <div class="overlay"></div>
+              </div>
+              </Fade>
+              
+              <p className="about-us-text">
+                Edison Group was founded in 2009 with the aim to enhance aspects
+                of life for people by providing powerful brands, reliable
+                products and a wide range of services. It ventured into the real
+                estate sector in 2015 with its “dream team” dedicated to merge
+                value and innovation in the evolving real estate sector of
+                Bangladesh. Through considerable focus on design, structural
+                dimension, and feasibility in the sense of space and resource
+                conservation; as well as environmental soundness; we deliver you
+                optimum support in residential and commercial accommodation.
+                <br />
+                <br />
+                Conjoining the expertise of different fields to develop and
+                bring in the quintessence of contemporary lifestyle, we provide
+                distinguished services and strictly maintain project handover
+                deadlines. We assure you to be your most reliable developer in
+                Dhaka in terms of integrity and credibility.
+              </p>
+              <Button className="btn-primary mb-4" variant="primary">Learn More</Button>
+            </div>
+          </Col>
+          <Col lg={6} sm={12} >
+            <div className="about-us-video px-2">
+              <video width="400" controls>
+                <source src="mov_bbb.mp4" type="video/mp4" />
+                <source src="mov_bbb.ogg" type="video/ogg" />
+              </video>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
         </div>
     );
 };

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { Fade } from 'react-reveal';
 import Footer from '../../Shared/Footer/Footer';
 import NavBars from '../../Shared/NavBars/NavBars';
 import './ContactLandowoner.css'
@@ -14,11 +13,7 @@ const ContactLandowoner = () => {
         <div>
             <NavBars/>
             <div className='landWoner'>   
-            <Fade>
-            <Fade left>
-                  <p>LANDOWNER <br /></p>
-                  </Fade>
-                </Fade>    
+                  <p>LANDOWNER <br /></p>          
            </div>
 
            <div className='contact-topbanner'> 

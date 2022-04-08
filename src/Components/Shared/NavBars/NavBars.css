@@ -2,18 +2,21 @@
 body {
   font-family: "Sofia Pro";
 }
-
-.nav-wraper{
-  background-color: rgba(24, 20, 20, 0.485) !important;
-  width: 100% !important;
-  position: fixed;
-  height: 100% !important ;
-  
+.naveLogo{
+  position: static;
+  z-index: 999999999;
+  padding: 20px 40px;
+  top: 0;
+  left: 0;
 }
-.navbar{
-background-color: rgba(0, 0, 0, 0.51) !important;
-height: 80px !important; 
+.nav-wraper{
+  background-color: rgba(0, 0, 0, 0.456) !important;
+  width: 100vw;
+  position: fixed;
+  height: 80px;
+  z-index: 9999999;
 }
 .manu-icon{
   position: static;
 }
+/* manu icon/// */

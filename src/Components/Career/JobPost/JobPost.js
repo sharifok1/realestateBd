@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Fade } from 'react-reveal';
 import { Link } from 'react-router-dom';
 import './JobPost.css'
 const JobPost = () => {
@@ -26,16 +25,13 @@ console.log(jobPost)
             }}>
                 <Container className='pt-5'>
                     <div className='pe-md-5 me-md-5'>
-                        <Fade>
-                        <Fade left>
                     <h1 style={{
                         color:'#003a71',
                         fontSize:'40px',
                         marginBottom:'40px',
                         fontWeight:'800'
                     }}>WHY JOIN US</h1>
-                        </Fade>
-                        </Fade>
+
                     <p className='text-dark'>
                     We want to serve the purpose of living a luxurious and comfortable life, offering impeccable housing facilities that connotes magnificence, elegance and comfort. We believe, we would not be able to achieve this without a dynamic and collaborative workforce. Hence, we strongly promote a healthy work environment and aim to attract and select a diverse team of individuals; establishing equal opportunity for all, irrespective of race, age, gender, class, ethnicity, disability, location and religion.
 
@@ -50,15 +46,11 @@ console.log(jobPost)
             <div className='job-card-section py-5'>
               <Container>
               <div>
-              <Fade>
-              <Fade left>
                 <h1 style={{
                         color:'#003a71',
                         fontSize:'40px',
                         fontWeight:'800'
                     }}>AVAILABLE JOBS</h1>
-                     </Fade>
-                        </Fade>
                 </div>
                 <div>
                 <Row xs={1} md={2} lg={3} className="g-5 m-0 mb-5 mt-md-5">
@@ -66,8 +58,6 @@ console.log(jobPost)
                 jobPost.map((post)=><div
                 key={post.id}
                 >
-                    <Fade>
-                    <Fade bottom>
                        <Col>
                         <div className='text-dark job-card'>
                                <h4>{post?.jobTitle}</h4>
@@ -79,8 +69,6 @@ console.log(jobPost)
                                </Link>
                         </div>
                         </Col>
-                        </Fade>
-</Fade>
                     </div>)}
                  </Row>
                 </div>

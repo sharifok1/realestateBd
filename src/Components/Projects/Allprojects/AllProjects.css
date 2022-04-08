@@ -31,10 +31,3 @@
     transform: scale(.5);
     animation: .3s slideIn ease-in-out forwards, .5s skewBg ease-in-out;
 }
-.slider-card:hover .slider-card-img{
- transform: scale(1.3);
- transition: 5s;
-}
-.slider-card-img{
-    transition: 5s;
-}

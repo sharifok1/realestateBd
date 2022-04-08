@@ -18,10 +18,8 @@ const Featured = () => {
                     <p className="about-sub-title">FEATURED PROJECTS</p>
                     </Fade>
                       <Fade left>
-                      <div>
-                      <h1 
-                      className="animate__rollIn"
-                      style={{color:'#003a71',fontWeight:'800',}}>
+                      <div class = ' projects'>
+                      <h1 style={{color:'#003a71',fontWeight:'800',}}>
                       BESPOKE ENCLAVES WITH FINESSE <br />
                         IN ARCHITECTURE AND DESIGN
                       </h1>

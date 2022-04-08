@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { Fade } from 'react-reveal';
 import { Link } from 'react-router-dom';
 import Footer from '../../Shared/Footer/Footer';
 import NavBars from '../../Shared/NavBars/NavBars';
@@ -27,9 +26,7 @@ const AllBlogs = () => {
                 key={blog.id}
                 >
                     { console.log(blog)}
-                    <Col className="blog-card">
-                        <Fade>
-                        <Fade top>
+                    <Col className="slider-card">
                     <Card className='mt-5 blog-card border-0 '>
                         <Card.Img className='blog-card-img' variant="top" src={blog?.imgOne} />
                         <Card.Body>
@@ -44,10 +41,8 @@ const AllBlogs = () => {
                             </button>
                         </Link>
                         </Card.Body>
-                        
                     </Card>           
-                    </Fade>
-                    </Fade>
+                     
                     </Col>
                 </div>)}
             </Row>

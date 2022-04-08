@@ -283,21 +283,15 @@ section h1 {
   }
 
   /* slider/// */
-  .slider-top-banner{
-    /* height: 100vh; */
-    position: relative;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    height: 100vh;
-  }
-  .banner-1, .banner-2, banner-3 , banner-4{
+  .banner-1{
     height: 100vh;
     width: 100%;
-    position: absolute;
-    top: 0;
+    position: relative;
     left: 0;
-
+    top: 0;
+    overflow: hidden;
+    /* position: absolute; */
+    /* background-color: red; */
   }
   .banner-1 img{
     width: 120%;
@@ -307,148 +301,16 @@ section h1 {
      transform: translate(-50%,-50%);
   }
   .slide-inner-text{
-    width: 60%;
-    position: absolute;
-    top: 50vh;
-    color: #f4f4f4;
-    left: 100px;
-    text-align: left;
-  }
-  .slide-inner-text h1{
-    background-color: #0000008e;
-    margin-bottom: 50px;
-  }
-  .slide-inner-text p{
-    font-size: 22px;
-    font-weight: 500;
-    text-align: center;
-    background-color: #0000008e;
-  }
-  /* .slide-inner-text h1{
     width: 600px;
     position: absolute;
     top: 200px;
     color: #f4f4f4;
     left: 100%;
-  } */
-  /* banner-4 */
-  .banner-1{
-    animation: slide1 12s liner infinite;
   }
-  .banner-2{
-    animation: slide2 12s liner infinite;
+  .slide-inner-text h1{
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    color: #f4f4f4;
+    left: 100%;
   }
-  .banner-3{
-    animation: slider3 12s liner infinite;
-  }
-  .banner-4{
-    animation: slider4 12s liner infinite;
-  }
-  @keyframes slide1{
-    0%{
-      visibility: visible;
-    }
-  }
-
-
-
-
-  /* new videw slider// */
-  
-.banner-heading{
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  line-height: 1.1;
-
-}
-.banner-heading p{
- width: 60%;
- margin: 0 auto;
- display: flex;
- align-items: center;
- justify-content: center;
- font-size: 50px;
- text-align: center;
- font-weight: 800;
-}
-@media only screen and (max-width:979px) {
-  .banner-heading p{
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    text-align: center;
-    font-weight: 800;
-   }
-}
-
-
-.svg-text {
-  position: relative;
-  /* display: block; */
-  font:'Montserrat';
-  /* width: 600px; */
-  height: 100%;
-  margin: auto auto;
-  top: 25vh;
-  background-color: rgba(0, 0, 0, 0.389);
-  font-size: 50px;
-  
-}
-
-.text-copy {
-  fill: none;
-  stroke: white;
-  stroke-dasharray: 6% 29%;
-  stroke-width: 5px;
-  stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1){
-stroke: #d1bbbb;
-animation-delay: 1s;
-}
-
-.text-copy:nth-child(2){
-stroke: #d2a757;
-animation-delay: -3s;
-}
-
-.text-copy:nth-child(3){
-stroke: #dcd5c0;
-animation-delay: -4s;
-}
-
-.text-copy:nth-child(4){
-stroke: #FDB731;
-animation-delay: -5s;
-}
-
-.text-copy:nth-child(5){
-stroke: #dcd5c0;
-animation-delay: -6s;
-}
-
-@keyframes stroke-offset{
-100% {stroke-dashoffset: -35%;}
-}
-
-@media only screen and (max-width:979px) {
-  .svg-text {
-  
-    display: block;
-    font: 70px 'Montserrat';
-    width: auto;
-    height: auto;
-    top: 20vh;
-    padding: 20px 0;
-  }
-}

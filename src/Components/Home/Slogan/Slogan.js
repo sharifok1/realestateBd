@@ -3,7 +3,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './Slogan.css';
 import Map from '../Map/Map';
 import Contact from '../Contact/Contact';
-import { Fade } from 'react-reveal';
 
 const Slogan = () => {
    
@@ -12,8 +11,6 @@ const Slogan = () => {
             <Container>
                 <Row className='m-0 p-0'>
                     <Col sm={12} md={6}>
-                        <Fade>
-                        <Fade left>
                         <Container className='text-start  slogan-card m-0'>
                            <div className='slogan-left'>
                            <h4>LANDOWNERS</h4>
@@ -25,16 +22,10 @@ const Slogan = () => {
                             <h1>TOMORROW</h1>
                            </div>
                         </Container>
-                        </Fade>
-                        </Fade>
                     </Col>
                     <Col sm={12} md={6}>
-                        
                         <Container>
-                       
                            <div className='right-card '>
-                           <Fade>
-                           <Fade right>
                            <div>
                            <h1 className='text-white text-start'>
                                <span className='coma1'>“</span> 
@@ -46,12 +37,8 @@ const Slogan = () => {
                                <h6>Dutch Architect</h6>
                            </div>
                            </div>
-                           </Fade>
-                          </Fade>
                            </div>
-                          
                         </Container>
-                       
                     </Col>
                 </Row>
          </Container>
