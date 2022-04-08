@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
+import { Fade } from 'react-reveal';
 
 import './Contact.css'
 const Contact = () => {
@@ -12,9 +13,12 @@ const Contact = () => {
            <Row xs={1} md={2} className="g-4 m-0">
           
             <Col>
+            <Fade>
+                    <Fade left>
                 <Card>
-                  <div>
-                      <h1>SCHEDULE A MEETING</h1>
+                   
+                  <div className='contact-booking-from'>
+                      <h1 className='meeting-heading'>SCHEDULE A MEETING</h1>
                         <form onSubmit={handleSubmit(onSubmit)}>
                            <div className='home-contack'>
                                 <input className='home-contact-input'  {...register("Name")} placeholder="Full Name *" required />
@@ -37,22 +41,30 @@ const Contact = () => {
                         </form>
                   </div>
                 </Card>
+                </Fade>
+                </Fade>
             </Col>
             <Col>
-                <Card>
-                   <img src="https://edisonrealestatebd.com/themes/cms/assets/images/static/appointment.jpg" alt="" />
+                   <Fade>
+                    <Fade right>
+                <Card className='booking-baackground'>
+                   {/* <img src="https://edisonrealestatebd.com/themes/cms/assets/images/static/appointment.jpg" alt="" /> */}
                    <div className='counter-wraper'>
                       <div style={{
                           textAlign:'start'
                       }}>
                       <h6 style={{
-                          color:'#ccc',
-                          fontSize:'20px'
+                          color:'#555',
+                          fontWeight:'600',
+                          fontSize:'20px',
+                         
                       }}>BOOK AN APPOINTMENT</h6>
                        <h1
+                       className='text-start'
                         style={{
                             fontSize:'40px',
-                            fontWeight:'800'
+                            fontWeight:'800',
+                            textAlign:'start ! important'
                         }}
                        >AVAILABLE <br /> APARTMENTS <br /> LIST</h1>
                       </div>
@@ -71,6 +83,8 @@ const Contact = () => {
                       
                    </div>
                 </Card>
+                </Fade>
+                </Fade>
             </Col>
           
             </Row>

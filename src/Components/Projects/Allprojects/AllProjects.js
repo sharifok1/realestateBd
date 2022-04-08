@@ -92,6 +92,7 @@ const AllProjects = () => {
         }}
       >
         <Container>
+<<<<<<< HEAD
           <Row xs={1} md={2} lg={3} className="g-4">
             {projects.map((project) => (
               <div key={project.id}>
@@ -122,6 +123,31 @@ const AllProjects = () => {
                       Explore
                     </button>
                   </Link>
+=======
+        <Row xs={1} md={2} lg={3} className="g-4">
+        {
+            projects.map((project)=><div
+            key={project.id}
+           
+            >
+                 <Col className="slider-card" >
+                            <img
+                             className="slider-card-img img-fluid" 
+                             src={project.projectImage} alt="" />
+                            <div className="allproject-img-overlay"></div>
+                                <div className="slider-text-div">
+                                    <div className="mb-4">
+                                    <div className="card-name">
+                                            <h1 className="card-heading">{project.projectName}</h1>
+                                            <h3 >{project.location}</h3>
+                                            </div>
+                                            <p
+                                            style={{color:'#eee'}}
+                                            >{project.description.slice(0,150)} . . .</p>
+                                    </div>                          
+                                </div>   
+                     <Link to={`/details/${project.id}`}> <button className="btn-secondary mb-4 mt-3 btn-position" variant="primary">Explore</button></Link>
+>>>>>>> f7c7875b2bb5f95983d9378fa890fa27081119f8
                 </Col>
               </div>
             ))}

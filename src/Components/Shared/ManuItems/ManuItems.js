@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./ManuItems.css";
@@ -30,6 +31,37 @@ const ManuItems = () => {
               </div>
             </div>
           </div>
+=======
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './ManuItems.css'
+import  building from '../../../asset/buildingTech.png'
+
+const ManuItems = () => {
+    return (
+        <div >
+            <main id='#'>
+                 <input type="checkbox" id="myInput"/> 
+                    <label for="myInput">
+                        <span class="bar top"></span>
+                        <span class="bar middle"></span>
+                        <span class="bar bottom"></span>
+                        </label>
+                    <aside>
+                        <div class="aside-section aside-left">
+                            <div className='buildingTec'>
+                                <img src={building} alt="" />
+                            </div>
+                        <a href="tel:0123" className='make-call-btn'><i class="fa-solid fa-circle-phone"></i> TALK WITH OUR TEAM</a>
+                           <div class="aside-content">
+                                <p className='aside-contact-head'>CONTACT</p>
+                               <p> PHONE: +88018********</p>
+                               <p>EMAIL: domicileltdweb@gmail.com</p>
+                               <p>HOURS: 9am - 4pm MONDAY-FRIDAY</p> 
+
+                          </div>
+                        </div>
+>>>>>>> f7c7875b2bb5f95983d9378fa890fa27081119f8
 
           <div class="aside-section aside-right">
             <nav>
@@ -68,6 +100,7 @@ const ManuItems = () => {
                   </ul>
                 </li>
 
+<<<<<<< HEAD
                 <li class="sub-menu-parent" tab-index="0">
                   <a className="aside-anchor" style={{ cursor: "pointer" }}>
                     Services
@@ -81,6 +114,15 @@ const ManuItems = () => {
                     </li>
                   </ul>
                 </li>
+=======
+                                    <li class="sub-menu-parent" tab-index="0">
+                                    <a href='#/' className='aside-anchor' style={{cursor:'pointer'}}>Services</a>
+                                    <ul class="sub-menu">
+                                        <li><NavLink to="/ownedLand">Owned Land</NavLink></li>
+                                        <li><NavLink to="/jointVenture">Joint Venture</NavLink></li>
+                                    </ul>
+                                    </li>
+>>>>>>> f7c7875b2bb5f95983d9378fa890fa27081119f8
 
                 {/* blog and carrer// */}
                 <li class="sub-menu-parent" tab-index="0">

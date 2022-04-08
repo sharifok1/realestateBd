@@ -3,6 +3,7 @@ import { Card, CardGroup, Container, Modal } from 'react-bootstrap';
 import './AboutDetails.css';
 import videoBeg from '../../../asset/video-beg.png'
 import { Link } from 'react-router-dom';
+import { Fade } from 'react-reveal';
 const AboutDetails = () => {
     const [modalShow, setModalShow] = React.useState(false);
     function MyVerticallyCenteredModal(props) {
@@ -36,12 +37,17 @@ const AboutDetails = () => {
                 <Card className='border-0 pt-5' style={{backgroundColor:'#eee'}}>
                     <Card.Body>
                     <Card.Title>
+                      <Fade>
+                        <Fade left>
                         <h1
                         style={{
                             color:'#003a71',
                             fontWeight:'800',
+                            textAlign:'left'
                         }}
                         >WHO <br /> WE ARE</h1>
+                        </Fade>
+                        </Fade>
                     </Card.Title>
                     <Card.Text className='text-dark fs-6 pe-2 pt-5'>
                    <strong>Domiciled EBL BD </strong> <br /> 
