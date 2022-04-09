@@ -22,6 +22,7 @@ import Projects from "../Projects/Projects";
 import AddBlogData from "../AddBlogData/AddBlogData";
 import AddJobPost from "../AddJobPost/AddJobPost";
 import AddProjects from "../AddProjects/AddProjects";
+import ApponitmentReq from "../AppointmentReq/ApponitmentReq";
 
 const drawerWidth = 240;
 
@@ -126,6 +127,20 @@ function Dashboard(props) {
             </ListItemText>
           </ListItem>
         </Link>
+        <Link
+          className="fw-bold"
+          style={{ textDecoration: "none", color: "GrayText" }}
+          to="/dashboard/apponitmentReq"
+        >
+          <ListItem button>
+            <ListItemText>
+              <span className="fw-bold">
+                <i className="fas fa-users-cog"></i> Appoinment List
+              </span>
+            </ListItemText>
+          </ListItem>
+        </Link>
+
       </List>
     </div>
   );
@@ -213,6 +228,7 @@ function Dashboard(props) {
           <Route path="addBlogData" element={<AddBlogData />} />
           <Route path="addJobPost" element={<AddJobPost />} />
           <Route path="addProjects" element={<AddProjects />} />
+          <Route path="apponitmentReq" element={< ApponitmentReq/>}/>
         </Routes>
       </Box>
     </Box>
