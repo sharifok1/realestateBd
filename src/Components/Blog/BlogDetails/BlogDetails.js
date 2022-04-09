@@ -60,15 +60,15 @@ const BlogDetails = () => {
                 </div>
                
                {/* comment section */}
-                <div className='text-dark w-80 border p-4'>
+                {/* <div className='text-dark w-80 border p-4'>
                     <div>
                         <h5>Md. Shariful Islam</h5>
                         <p>{fullBlog?.userComment}</p>
                     </div>
-                </div>
+                </div> */}
                 
                 {/* add comment// */}
-                <div>
+                {/* <div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                    <div className='blog-comment-form'>
                  <textarea  {...register("Comment")} placeholder="Comment" required/>
@@ -82,7 +82,7 @@ const BlogDetails = () => {
                    
                     
                 </form>
-                </div>
+                </div> */}
               </div>
             </Container>
 
