@@ -25,7 +25,7 @@ console.log(resume)
         formData.append(exp,'exp')
         formData.append(resume,'resume');
 
-        fetch('http://localhost:5000/application', {
+        fetch('https://secure-cove-36711.herokuapp.com/application', {
             method: 'POST',
             body: formData
           })

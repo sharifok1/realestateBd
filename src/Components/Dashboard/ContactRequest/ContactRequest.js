@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 const ContactRequest = () => {
     const [contact, setContact] = useState([])
     useEffect(()=>{
-        const url = 'http://localhost:5000/contactRequest'
+        const url = 'https://secure-cove-36711.herokuapp.com/contactRequest'
         fetch(url)
         .then(res=>res.json())
         .then(data=>setContact(data))
@@ -15,7 +15,7 @@ console.log(contact)
         const proceed = window.confirm("Are you sure, you want to delete?", id);
         console.log(id);
         if (proceed) {
-          const url = `http://localhost:5000/contactRequest/${id}`;
+          const url = `https://secure-cove-36711.herokuapp.com/contactRequest/${id}`;
           fetch(url, {
             method: "DELETE",
           })

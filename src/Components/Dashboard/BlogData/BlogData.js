@@ -6,7 +6,7 @@ const BlogData = () => {
   const [blogData, setBlogData] = useState();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/blogdata")
+    fetch("https://secure-cove-36711.herokuapp.com/blogdata")
       .then((res) => res.json())
       .then((data) => setBlogData(data))
       .then(() => setIsLoading(false));
@@ -16,7 +16,7 @@ const BlogData = () => {
     const proceed = window.confirm("Are you sure, you want to delete?", id);
     console.log(id);
     if (proceed) {
-      const url = `http://localhost:5000/blogdata/${id}`;
+      const url = `https://secure-cove-36711.herokuapp.com/blogdata/${id}`;
       fetch(url, {
         method: "DELETE",
       })

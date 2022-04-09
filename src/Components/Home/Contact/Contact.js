@@ -8,7 +8,7 @@ import './Contact.css'
 const Contact = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data =>{
-          const url = 'http://localhost:5000/appoinment'
+          const url = 'https://secure-cove-36711.herokuapp.com/appoinment'
           axios.post(url, data)
           .then(res=>{
               if(res.data.insertedId){

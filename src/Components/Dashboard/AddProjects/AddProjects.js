@@ -41,7 +41,7 @@ const AddProjects = () => {
       type: type,
       location: location,
     };
-    fetch("http://localhost:5000/projects", {
+    fetch("https://secure-cove-36711.herokuapp.com/projects", {
       method: "POST",
       headers: {
         "content-type": "application/json",

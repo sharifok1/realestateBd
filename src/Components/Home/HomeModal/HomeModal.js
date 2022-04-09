@@ -12,13 +12,12 @@ const HomeModal = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(()=>{
-    // const url = './HomeModal.json';
-    //   fetch(url)
-    //  .then(res=>res.json())
-    //  .then(data=> )
-    setProjects([1,2,3])
-    console.log(projects)
+    const url = 'https://secure-cove-36711.herokuapp.com/projects';
+      fetch(url)
+     .then(res=>res.json())
+     .then(data=>setProjects(data))
     },[]);
+    console.log(projects)
     
     return (
         <div>
@@ -47,12 +46,12 @@ const HomeModal = () => {
                     <h5 className='text-dark' style={{fontWeight:'800',fontFamily:'sofia pro'}}>FEATURED PROJECTS
                     </h5>
                       </div>
-                      
+                     
                      
                   <Row xs={1} md={1} lg={3}  className="modal-three-Card">
                   {
                     projects.map((project)=><div
-                    key={project.id}
+                    key={project._id}
                     >
                      <Col>
                         <Card style={{overflow:'hidden'}}>
@@ -71,7 +70,7 @@ const HomeModal = () => {
                                         </div>       
                                     
                               </div>
-                              <NavLink to={`/details/${'p1'}`}>
+                              <NavLink to={`/details/${project._id}`}>
                               <button className="btn-secondary mb-4 mt-3 btn-position" variant="primary" style={{backgroundColor:'transparent !important'}}>Explore</button> 
                               </NavLink>
                               </div>

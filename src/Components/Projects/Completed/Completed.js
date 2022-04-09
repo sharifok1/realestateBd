@@ -12,7 +12,7 @@ const Completed = () => {
   //   const [allProjects, setAllProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/projects")
+    fetch("https://secure-cove-36711.herokuapp.com/projects")
       .then((res) => res.json())
       .then((data) =>
         setProjects(data?.filter((td) => td?.category === "Completed"))
@@ -20,7 +20,7 @@ const Completed = () => {
       .then(() => setIsLoading(false));
   }, []);
   //   useEffect(() => {
-  //     fetch("http://localhost:5000/projects")
+  //     fetch("https://secure-cove-36711.herokuapp.com/projects")
   //       .then((res) => res.json())
   //       .then((data) => setAllProjects(data))
   //       .then(() => setIsLoading(false));

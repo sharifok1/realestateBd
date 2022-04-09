@@ -13,7 +13,7 @@ import './ProjectDetails.css'
 const ProjectDetails = () => {
  const [details, setDetails] = useState([]);
  useEffect(()=>{
- const url = '../projects.json';
+ const url = 'https://secure-cove-36711.herokuapp.com/projects';
    fetch(url)
   .then(res=>res.json())
   .then(data=> setDetails(data))
@@ -22,7 +22,7 @@ const ProjectDetails = () => {
 
     const {detailsId} = useParams()
 
-    const projectId = details?.find((projectDetals)=>projectDetals.id === detailsId);
+    const projectId = details?.find((projectDetals)=>projectDetals._id === detailsId);
    console.log(projectId);
   
 

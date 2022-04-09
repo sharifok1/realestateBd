@@ -26,7 +26,7 @@ const AddBlogData = () => {
     product = {
       ...blogDate,
     };
-    fetch("http://localhost:5000/blogData", {
+    fetch("https://secure-cove-36711.herokuapp.com/blogData", {
       method: "POST",
       headers: {
         "content-type": "application/json",

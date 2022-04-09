@@ -7,7 +7,7 @@ const JobPost = () => {
 
     const [jobPost, setJobPost] = useState([]);
     useEffect(()=>{
-    const url = 'jobPost.json';
+    const url = 'https://secure-cove-36711.herokuapp.com/jobPost';
       fetch(url)
      .then(res=>res.json())
      .then(data=> setJobPost(data))
@@ -74,7 +74,7 @@ console.log(jobPost)
                                <h6>Vacancy : {post?.vacancy}</h6>
                                <h6>Employment Status:{post?.employmentStatus}</h6>
                                <h6>Experience: {post?.exp}</h6>
-                               <Link to={`/jobDetails/${post.id}`}> 
+                               <Link to={`/jobDetails/${post._id}`}> 
                                <button className='job-details-btn'>Details</button>
                                </Link>
                         </div>

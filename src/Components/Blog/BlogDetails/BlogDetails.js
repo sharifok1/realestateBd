@@ -12,7 +12,7 @@ const BlogDetails = () => {
 
     const [details, setDetails] = useState([]);
     useEffect(()=>{
-    const url = '../blogData.json';
+    const url = 'https://secure-cove-36711.herokuapp.com/blogData';
       fetch(url)
      .then(res=>res.json())
      .then(data=> setDetails(data))
@@ -21,7 +21,7 @@ const BlogDetails = () => {
    
     const {blogId} = useParams()
    
-       const fullBlog = details?.find((projectDetals)=>projectDetals.id === blogId);
+       const fullBlog = details?.find((projectDetals)=>projectDetals._id === blogId);
       console.log(fullBlog);
     return (
         <div>

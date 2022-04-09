@@ -9,7 +9,7 @@ import './AllBlogs.css'
 const AllBlogs = () => {
     const [blogs, setBlogs] = useState([]);
     useEffect(()=>{
-    const url = 'blogData.json';
+    const url = 'https://secure-cove-36711.herokuapp.com/blogData';
       fetch(url)
      .then(res=>res.json())
      .then(data=> setBlogs(data))
@@ -39,7 +39,7 @@ const AllBlogs = () => {
                         </Card.Text>
                         <div className='text-dark fs-5' style={{fontWeight:'800'}}> <p>{blog?.blogTitle}</p> </div>
 
-                        <Link to={`/blogDetails/${blog.id}`}> 
+                        <Link to={`/blogDetails/${blog._id}`}> 
                             <button className="blog-explore-btn">
                                Explore
                             </button>
