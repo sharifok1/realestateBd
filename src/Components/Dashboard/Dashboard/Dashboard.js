@@ -26,8 +26,9 @@ import ApponitmentReq from "../AppointmentReq/ApponitmentReq";
 import ContactRequest from "../ContactRequest/ContactRequest";
 import LandOwner from "../LandOwner/LandOwner";
 import Buyer from "../Buyer/Buyer";
+import JobApplication from "../JobApplication/JobApplication";
 
-const drawerWidth = 240;
+const drawerWidth = 250;
 
 function Dashboard(props) {
   const { window } = props;
@@ -51,29 +52,15 @@ function Dashboard(props) {
             </ListItemText>
           </ListItem>
         </Link>
-
         <Link
           className="fw-bold"
           style={{ textDecoration: "none", color: "GrayText" }}
-          to="/dashboard/jobPost"
+          to="/dashboard/addProjects"
         >
           <ListItem button>
             <ListItemText>
               <span className="fw-bold">
-                <i className="fas fa-tasks"></i> Job Posts
-              </span>
-            </ListItemText>
-          </ListItem>
-        </Link>
-        <Link
-          className="fw-bold"
-          style={{ textDecoration: "none", color: "GrayText" }}
-          to="/dashboard/blogData"
-        >
-          <ListItem button>
-            <ListItemText>
-              <span className="fw-bold">
-                <i className="fas fa-cart-plus"></i> Blog Data
+                <i className="fas fa-users-cog"></i> Add a Projects
               </span>
             </ListItemText>
           </ListItem>
@@ -86,20 +73,7 @@ function Dashboard(props) {
           <ListItem button>
             <ListItemText>
               <span className="fw-bold">
-                <i className="fas fa-users-cog"></i> Projects
-              </span>
-            </ListItemText>
-          </ListItem>
-        </Link>
-        <Link
-          className="fw-bold"
-          style={{ textDecoration: "none", color: "GrayText" }}
-          to="/dashboard/addBlogData"
-        >
-          <ListItem button>
-            <ListItemText>
-              <span className="fw-bold">
-                <i className="fas fa-users-cog"></i> Add Blog Data
+                <i className="fas fa-users-cog"></i> Manage Project
               </span>
             </ListItemText>
           </ListItem>
@@ -112,7 +86,7 @@ function Dashboard(props) {
           <ListItem button>
             <ListItemText>
               <span className="fw-bold">
-                <i className="fas fa-users-cog"></i> Add Job Post
+                <i className="fas fa-users-cog"></i> Add a Post Job
               </span>
             </ListItemText>
           </ListItem>
@@ -120,16 +94,45 @@ function Dashboard(props) {
         <Link
           className="fw-bold"
           style={{ textDecoration: "none", color: "GrayText" }}
-          to="/dashboard/addProjects"
+          to="/dashboard/jobPost"
         >
           <ListItem button>
             <ListItemText>
               <span className="fw-bold">
-                <i className="fas fa-users-cog"></i> Add Projects
+                <i className="fas fa-tasks"></i> Manage JobPost
               </span>
             </ListItemText>
           </ListItem>
         </Link>
+        
+        <Link
+          className="fw-bold"
+          style={{ textDecoration: "none", color: "GrayText" }}
+          to="/dashboard/addBlogData"
+        >
+          <ListItem button>
+            <ListItemText>
+              <span className="fw-bold">
+                <i className="fas fa-users-cog"></i> Post a Blog
+              </span>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link
+          className="fw-bold"
+          style={{ textDecoration: "none", color: "GrayText" }}
+          to="/dashboard/blogData"
+        >
+          <ListItem button>
+            <ListItemText>
+              <span className="fw-bold">
+                <i className="fas fa-users-cog"></i> Manage Blog
+              </span>
+            </ListItemText>
+          </ListItem>
+        </Link>
+       
+       
 
         <Link
           className="fw-bold"
@@ -139,7 +142,7 @@ function Dashboard(props) {
           <ListItem button>
             <ListItemText>
               <span className="fw-bold">
-                <i className="fas fa-users-cog"></i> Appoinment List
+                <i className="fas fa-users-cog"></i> Appoinment
               </span>
             </ListItemText>
           </ListItem>
@@ -152,7 +155,7 @@ function Dashboard(props) {
           <ListItem button>
             <ListItemText>
               <span className="fw-bold">
-                <i className="fas fa-users-cog"></i>ContactRequest
+                <i className="fas fa-users-cog"></i> ContactRequest
               </span>
             </ListItemText>
           </ListItem>
@@ -166,7 +169,7 @@ function Dashboard(props) {
           <ListItem button>
             <ListItemText>
               <span className="fw-bold">
-                <i className="fas fa-users-cog"></i>LandOwner
+                <i className="fas fa-users-cog"></i> LandOwner
               </span>
             </ListItemText>
           </ListItem>
@@ -180,7 +183,21 @@ function Dashboard(props) {
           <ListItem button>
             <ListItemText>
               <span className="fw-bold">
-                <i className="fas fa-users-cog"></i>Buyer
+                <i className="fas fa-users-cog"></i> Buyer
+              </span>
+            </ListItemText>
+          </ListItem>
+        </Link>
+
+        <Link
+          className="fw-bold"
+          style={{ textDecoration: "none", color: "GrayText" }}
+          to="/dashboard/jobApplication"
+        >
+          <ListItem button>
+            <ListItemText>
+              <span className="fw-bold">
+                <i className="fas fa-users-cog"></i> jobApplication
               </span>
             </ListItemText>
           </ListItem>
@@ -277,6 +294,7 @@ function Dashboard(props) {
           <Route path="contactRequest" element={< ContactRequest/>}/>
           <Route path="landOwner" element={<LandOwner/>}/>
           <Route path="buyer" element={<Buyer/>}/>
+          <Route path="jobApplication" element={<JobApplication/>}/>
         </Routes>
       </Box>
     </Box>

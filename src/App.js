@@ -17,6 +17,7 @@ import BlogData from "./Components/Dashboard/BlogData/BlogData";
 import Buyer from "./Components/Dashboard/Buyer/Buyer";
 import ContactRequest from "./Components/Dashboard/ContactRequest/ContactRequest";
 import Dashboard from "./Components/Dashboard/Dashboard/Dashboard";
+import JobApplication from "./Components/Dashboard/JobApplication/JobApplication";
 import JobPost from "./Components/Dashboard/JobPost/JobPost";
 import LandOwner from "./Components/Dashboard/LandOwner/LandOwner";
 import Projects from "./Components/Dashboard/Projects/Projects";
@@ -82,6 +83,7 @@ function App() {
           <Route path="contactRequest" element={<ContactRequest/>}/>
           <Route path="landOwner" element={<LandOwner/>}/>
           <Route path="buyer" element={<Buyer/>}/>
+          <Route path="jobApplication" element={<JobApplication/>}/>
         </Route>
       </Routes>
     </div>
