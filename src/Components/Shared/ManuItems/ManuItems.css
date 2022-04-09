@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-
-main {
+#main {
   height: 100vh;
   position: absolute;
   overflow: hidden;
@@ -11,7 +10,7 @@ main {
   top: 0;
   bottom: 0;
   position: fixed;
-  width: 100VW;
+  width: 100vw;
   z-index: 99999999;
 }
 .aside-left {
@@ -20,7 +19,7 @@ main {
   left: 0;
   /* background-image: url('../../../asset/project2.jpg'); */
   background-position: center;
-  background-size:cover ;
+  background-size: cover;
   /* background-color: #ff5964; */
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
@@ -35,8 +34,8 @@ main {
   background-image: url('../../../asset/project1.jpg') !important;
 } */
 
-.aside-left ::after{
-  content: '';
+.aside-left ::after {
+  content: "";
   width: 100%;
   height: 100vh;
   /* background-color: #04458bbd; */
@@ -47,7 +46,7 @@ main {
 .aside-right {
   width: 100%;
   right: 0;
-  background-color: #101010 !important;;
+  background-color: #101010 !important;
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
@@ -72,12 +71,12 @@ main {
   color: white;
   text-align: left;
 }
-.aside-contact-head{
+.aside-contact-head {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 50px;
 }
-.make-call-btn{
+.make-call-btn {
   color: #fff;
   border: 2px solid #f1b911;
   padding: 10px 30px;
@@ -86,71 +85,65 @@ main {
   left: 180px;
   /* bottom: 0px; */
 }
-.fa-circle-phone{
+.fa-circle-phone {
   background-color: transparent;
 }
-.buildingTec{
+.buildingTec {
   position: absolute;
   top: 15%;
   left: 180px;
 }
-.buildingTec img{
+.buildingTec img {
   width: 60%;
   animation-name: buildingMoved;
-  animation-direction:alternate-reverse;
+  animation-direction: alternate-reverse;
   animation-duration: 10s;
-  animation-fill-mode:forwards;
-  animation-iteration-count:infinite ;
-  animation-play-state:running ;
-  animation-timing-function:ease-in-out ;
- 
- 
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+
   animation-fill-mode: both;
 }
-@keyframes buildingMoved{
-  
-  0%{
-    opacity: .2;
+@keyframes buildingMoved {
+  0% {
+    opacity: 0.2;
   }
-  20%{
-    opacity: .5;
+  20% {
+    opacity: 0.5;
   }
-  40%{
-    opacity: .8;
+  40% {
+    opacity: 0.8;
   }
-  50%{
-    opacity: .1;
+  50% {
+    opacity: 0.1;
   }
-  60%{
-    opacity: .8;
+  60% {
+    opacity: 0.8;
   }
-  80%{
-    opacity: .5;
+  80% {
+    opacity: 0.5;
   }
-  100%{
-    opacity: .2;
+  100% {
+    opacity: 0.2;
   }
- 
 }
 
-
-
-
-.make-call-btn:hover{
+.make-call-btn:hover {
   color: #fff;
   border: 2px solid #f1b911;
   background-color: #f1b911;
 }
-.aside-contact-head::before{
-  content: '';
-  position:absolute;
+.aside-contact-head::before {
+  content: "";
+  position: absolute;
   width: 100px;
   height: 3px;
- background-color: #f1b911;
- left: 40px;
- top: 30px;
- transition: .5s ease-in-out;
- /* right: 0; */
+  background-color: #f1b911;
+  left: 40px;
+  top: 30px;
+  transition: 0.5s ease-in-out;
+  /* right: 0; */
 }
 input[type="checkbox"] {
   display: none;
@@ -202,7 +195,6 @@ label {
   z-index: 9999999999;
   position: fixed;
   right: 20px;
-
 }
 
 .bar {
@@ -226,18 +218,18 @@ label {
   .aside-right {
     width: 60%;
   }
-  .aside-left ::after{
+  .aside-left ::after {
     display: none;
   }
 }
 
 /* //// new try ..// */
-.sub-menu-parent { 
-  position: relative; 
-  top:100px
+.sub-menu-parent {
+  position: relative;
+  top: 100px;
 }
 
-.sub-menu { 
+.sub-menu {
   visibility: hidden; /* hides sub-menu */
   opacity: 0;
   position: absolute;
@@ -246,7 +238,8 @@ label {
   width: 50%;
   transform: translateY(-1em);
   z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+    z-index 0s linear 0.01s;
 }
 
 .sub-menu-parent:focus .sub-menu,
@@ -261,45 +254,51 @@ label {
 
 /* body { padding: 2%; font: 18px/1.4 sans-serif; } */
 
-nav a { 
-  color: #fff; 
+nav a {
+  color: #fff;
   font-size: 24px;
   font-weight: 700;
   display: block;
   padding: 0.5em 1em;
-  text-decoration: none; 
+  text-decoration: none;
 }
-nav a:hover { 
-  color:blue; 
+nav a:hover {
+  color: blue;
 }
 nav ul,
-nav ul li { list-style-type: none; padding: 0; margin: 0; }
+nav ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-nav > ul { background:transparent; text-align: center; }
+nav > ul {
+  background: transparent;
+  text-align: center;
+}
 nav > ul > li {
-   display: flex;
-   margin: 20px;
-   }
+  display: flex;
+  margin: 20px;
+}
 
 nav > ul > li:first-child {
-   border-left: none; 
-  
-  }
+  border-left: none;
+}
 
 .sub-menu a {
-  background: #7e765b ;
+  background: #7e765b;
   font-size: 18px;
 }
 .sub-menu a:hover {
   font-size: 18px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .aside-anchor::after {
   content: "";
   position: absolute;
   bottom: 0;
-  background-color: #f1b911;;
+  background-color: #f1b911;
   left: 20px;
   right: 20px;
   height: 3px;
@@ -337,15 +336,14 @@ nav > ul > li:first-child {
   font-size: 25px;
   position: relative;
   font-weight: 500;
-
 }
 
-@media only screen and (max-width:992px){
-  .sub-menu-parent { 
-    position: relative; 
-    top:20px
+@media only screen and (max-width: 992px) {
+  .sub-menu-parent {
+    position: relative;
+    top: 20px;
   }
-  .sub-menu { 
+  .sub-menu {
     visibility: hidden; /* hides sub-menu */
     opacity: 0;
     position: absolute;
@@ -356,37 +354,34 @@ nav > ul > li:first-child {
   nav > ul > li {
     display: flex;
     margin: 10px;
-    }
-    .submanu-last-child{
-      visibility: hidden; /* hides sub-menu */
+  }
+  .submanu-last-child {
+    visibility: hidden; /* hides sub-menu */
     opacity: 0;
     position: absolute;
     top: -100%;
     left: 50px;
     width: 80%;
-    }
-    .aside-left{
-      display: none !important;
-      background-color: #8a6b0e !important;
-    }
+  }
+  .aside-left {
+    display: none !important;
+    background-color: #8a6b0e !important;
+  }
 }
-.aside-right{
-  background-image: url('../../../asset/project1.jpg');
+.aside-right {
+  background-image: url("../../../asset/project1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode:overlay;
-  transition: all ease-in-out .5s;
+  background-blend-mode: overlay;
+  transition: all ease-in-out 0.5s;
 }
 .aside-right:hover {
-  background-image: url('../../../asset/project2.jpg') !important;
+  background-image: url("../../../asset/project2.jpg") !important;
   transition: all ease-in-out 2s;
-
 }
 
-
-
-.aside-left{
+.aside-left {
   font-family: "Archivo Black", sans-serif;
   background-color: #7e765b !important;
   display: flex;
