@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
@@ -5,8 +6,17 @@ import { Fade } from 'react-reveal';
 
 import './Contact.css'
 const Contact = () => {
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit,reset } = useForm();
+    const onSubmit = data =>{
+          const url = 'http://localhost:5000/appoinment'
+          axios.post(url, data)
+          .then(res=>{
+              if(res.data.insertedId){
+                  alert('student added successfully confirmed')
+                  reset();
+              }
+          })}
+    
     
     return (
         <div>

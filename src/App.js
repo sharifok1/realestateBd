@@ -8,6 +8,7 @@ import JobDetails from './Components/Career/JobDetails/JobDetails';
 import ContactBuyer from './Components/ContactSection/ContactBuyer/ContactBuyer';
 import ContactLandowoner from './Components/ContactSection/ContactLandowner/ContactLandowoner';
 import ContactMain from './Components/ContactSection/ContactMain/ContactMain';
+import ApponitmentReq from './Components/DeshBoard/AppointmentReq/ApponitmentReq';
 // import './App.css';
 
 import HomeParents from './Components/Home/HomeParents/HomeParents';
@@ -38,6 +39,11 @@ function App() {
      <Route path="/contactLandowoner" element={<ContactLandowoner/>}/>
      <Route path="/contactBuyer" element={<ContactBuyer/>}/>
      <Route path="/customerChat" element={<FbMsgChat/>}/>
+
+
+    {/* deshboard// */}
+    <Route path="/ApponitmentReq" element={< ApponitmentReq/>}/>
+
     </Routes>
     </div>
   );
