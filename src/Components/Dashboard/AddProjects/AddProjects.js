@@ -13,6 +13,9 @@ import { NavLink } from "react-router-dom";
 
 const AddProjects = () => {
   const [blogDate, setBlogDate] = useState({});
+  const [category, setCategory] = useState("");
+  const [type, setType] = useState("");
+  const [location, setLocation] = useState("");
   const [value, setValue] = useState(0);
   const handleOnBlur = (e) => {
     const field = e.target.name;
@@ -21,14 +24,24 @@ const AddProjects = () => {
     newblogDate[field] = value;
     setBlogDate(newblogDate);
   };
+  const handleChangeAll = (event) => {
+    setCategory(event.target.value);
+  };
+  const handleChangeType = (event) => {
+    setType(event.target.value);
+  };
+  const handleChangeLocation = (event) => {
+    setLocation(event.target.value);
+  };
   const handleProductDateSubmit = (e) => {
     let product;
     product = {
       ...blogDate,
-      rating: value,
-      condition: "pending",
+      category: category,
+      type: type,
+      location: location,
     };
-    fetch("https://pure-refuge-78290.herokuapp.com/blogs", {
+    fetch("http://localhost:5000/projects", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -47,6 +60,7 @@ const AddProjects = () => {
   };
   return (
     <div>
+      {" "}
       <Container>
         <form
           id="Form"
@@ -60,10 +74,10 @@ const AddProjects = () => {
             variant="h5"
             gutterBottom
           >
-            Add A Blog
+            Add Project
           </Typography>
           <TextField
-            sx={{ width: "95%", m: 1 }}
+            sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
             label="Project Name"
             name="projectName"
@@ -71,7 +85,7 @@ const AddProjects = () => {
             variant="outlined"
           />
           <TextField
-            sx={{ width: "95%", m: 1 }}
+            sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
             label="Sub-Title"
             name="subTitle"
@@ -79,93 +93,182 @@ const AddProjects = () => {
             variant="outlined"
           />
           <select
-            // onChange={handleChangeAll}
-            style={{ width: "95%" }}
-            className="m-1 p-2"
+            onChange={handleChangeAll}
+            className="w-100 px-2 py-3 my-1"
             // {...register("category")}
           >
             <option className="d-none" value="All">
-              All
+              Category
             </option>
             <option value="Ongoing">Ongoing</option>
             <option value="Upcoming">Upcoming</option>
             <option value="Completed">Completed</option>
           </select>
           <TextField
-            sx={{ width: "95%", m: 1 }}
+            sx={{ width: "100%", my: 1 }}
             id="outlined-multiline-static"
-            label="Detail 1"
-            name="detail1"
+            label="Description"
+            name="description"
+            onBlur={handleOnBlur}
+            multiline
+            rows={4}
+          />
+          <select
+            onChange={handleChangeLocation}
+            className="w-100 px-2 py-3 my-1"
+            // {...register("location")}
+          >
+            <option className="d-none" value="Location">
+              Location
+            </option>
+            <option value="Bashundhara R/A">Bashundhara R/A</option>
+            <option value="Tejgaon">Tejgaon</option>
+            <option value="Khilgaon">Khilgaon</option>
+            <option value="Bashundhara">Bashundhara</option>
+          </select>
+          <TextField
+            sx={{ width: "100%", my: 1 }}
+            id="outlined-basic"
+            label="Full Location"
+            name="fullLocation"
+            onBlur={handleOnBlur}
+            variant="outlined"
+          />
+          <select
+            onChange={handleChangeType}
+            className="w-100 px-2 py-3 my-1"
+            // {...register("type")}
+          >
+            <option className="d-none" value="Type">
+              Type
+            </option>
+            <option value="Residential">Residential</option>
+            <option value="Comemercial">Comemercial</option>
+          </select>
+          <TextField
+            sx={{ width: "100%", my: 1 }}
+            id="outlined-basic"
+            label="Orientation"
+            name="orientation"
+            onBlur={handleOnBlur}
+            variant="outlined"
+          />
+          <TextField
+            sx={{ width: "100%", my: 1 }}
+            id="outlined-basic"
+            label="FrontRoad"
+            name="FrontRoad"
+            onBlur={handleOnBlur}
+            variant="outlined"
+          />
+          <TextField
+            sx={{ width: "100%", my: 1 }}
+            id="outlined-multiline-static"
+            label="Land Size"
+            name="landSize"
             onBlur={handleOnBlur}
             multiline
             rows={4}
           />
           <TextField
-            sx={{ width: "95%", m: 1 }}
+            sx={{ width: "100%", my: 1 }}
+            id="outlined-basic"
+            label="Apartment Size"
+            name="apartmentSize"
+            onBlur={handleOnBlur}
+            variant="outlined"
+          />
+          <TextField
+            sx={{ width: "100%", my: 1 }}
+            id="outlined-basic"
+            label="Number of Apartments"
+            name="numberofAppartments"
+            onBlur={handleOnBlur}
+            variant="outlined"
+          />
+          <TextField
+            sx={{ width: "100%", my: 1 }}
+            id="outlined-basic"
+            label="Number of Parking"
+            name="numberofParking"
+            onBlur={handleOnBlur}
+            variant="outlined"
+          />
+          <TextField
+            sx={{ width: "100%", my: 1 }}
+            id="outlined-basic"
+            label="Number of Floors"
+            name="numberofFloors"
+            onBlur={handleOnBlur}
+            variant="outlined"
+          />
+          <TextField
+            sx={{ width: "100%", my: 1 }}
+            id="outlined-basic"
+            label="Handover Date"
+            name="handoverDate"
+            onBlur={handleOnBlur}
+            variant="outlined"
+          />
+          <TextField
+            sx={{ width: "100%", my: 1 }}
+            id="outlined-basic"
+            label="Project Image"
+            name="projectImage"
+            onBlur={handleOnBlur}
+            variant="outlined"
+          />
+          <TextField
+            sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
             label="Image 1"
-            name="image1"
+            name="img1"
             onBlur={handleOnBlur}
             variant="outlined"
           />
           <TextField
-            sx={{ width: "95%", m: 1 }}
-            id="outlined-multiline-static"
-            label="Detail 2"
-            name="detail2"
-            onBlur={handleOnBlur}
-            multiline
-            rows={4}
-          />
-          <TextField
-            sx={{ width: "95%", m: 1 }}
+            sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
             label="Image 2"
-            name="image2"
+            name="img2"
             onBlur={handleOnBlur}
             variant="outlined"
           />
           <TextField
-            sx={{ width: "95%", m: 1 }}
-            id="outlined-multiline-static"
-            label="Detail 3"
-            name="detail3"
-            onBlur={handleOnBlur}
-            multiline
-            rows={4}
-          />
-          <TextField
-            sx={{ width: "95%", m: 1 }}
+            sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
             label="Image 3"
-            name="image3"
+            name="img3"
             onBlur={handleOnBlur}
             variant="outlined"
           />
           <TextField
-            sx={{ width: "95%", m: 1 }}
+            sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
-            label="Cost"
-            name="cost"
+            label="Location Url"
+            name="locationUrl"
             onBlur={handleOnBlur}
             variant="outlined"
           />
           <TextField
-            sx={{ width: "95%", m: 1 }}
+            sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
-            label="Review"
-            name="Review"
+            label="Project Progress"
+            name="projectProgress"
             onBlur={handleOnBlur}
             variant="outlined"
           />
-          <h4 className="p-1 mt-3 ms-2 fs-5">
-            <small className="text-muted fw-bold">
-              Please rate by selecting star.
-            </small>
-          </h4>
+          <TextField
+            sx={{ width: "100%", my: 1 }}
+            id="outlined-basic"
+            label="Number of Floors"
+            name="numberofFloors"
+            onBlur={handleOnBlur}
+            variant="outlined"
+          />
 
           <Button
-            sx={{ width: "95%", m: 1 }}
+            sx={{ width: "100%", my: 1 }}
             style={{
               backgroundColor: "aquamarine",
               color: "black",
