@@ -79,9 +79,8 @@
 .ReactModal__Content{
   position: absolute !important;
   top: 80px !important;
-  padding-top: 50px !important;
+  padding-top: 40px !important;
   margin: 10px 60px !important;
-  /* margin: 40px !important; */
 }
 /*  */
 .modal-allExplore-btn{
@@ -91,6 +90,7 @@
  outline: none;
  border: 2px solid #000;
  transition: 1s;
+ margin-top: 10px !important;
 }
 .modal-allExplore-btn:hover{
   background-color:rgb(41, 102, 176);
@@ -107,11 +107,9 @@
   .ReactModal__Content {
     position: absolute !important;
     top: 80px !important;
-    /* padding: 20px !important; */
     margin: 0 auto !important;
-    /* margin: 40px !important; */
     width: 95% !important;
     left: 2.5% !important;
-    top: 65px !important;
+    top: 70px !important;
 }
  }

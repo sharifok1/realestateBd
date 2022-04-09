@@ -13,27 +13,7 @@ const HomeModal = () => {
     return (
         <div>
             <Modal
-            style={{
-            // overlay: {
-            //   position: 'fixed',
-            //   top: 20,
-            //   left: 10,
-            //   right: 10,
-            //   bottom: 0,
-            //   backgroundColor: 'rgba(255, 255, 255, 0.0) !important',
-            //   zIndex:'999'
-            // },
-            // content: {
-            //   position: 'absolute',
-            //   border: '1px solid #ccc',
-            //   background: '#fff',
-            //   overflow: 'auto',
-            //   WebkitOverflowScrolling: 'touch',
-            //   borderRadius: '4px',
-            //   outline: 'none',
-         
-            // }
-          }}
+            
            isOpen={modalAction} >
                <button style={{
                    position:'absolute',
