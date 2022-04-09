@@ -92,11 +92,7 @@ const AddProjects = () => {
             onBlur={handleOnBlur}
             variant="outlined"
           />
-          <select
-            onChange={handleChangeAll}
-            className="w-100 px-2 py-3 my-1"
-            // {...register("category")}
-          >
+          <select onChange={handleChangeAll} className="w-100 px-2 py-3 my-1">
             <option className="d-none" value="All">
               Category
             </option>
@@ -116,7 +112,6 @@ const AddProjects = () => {
           <select
             onChange={handleChangeLocation}
             className="w-100 px-2 py-3 my-1"
-            // {...register("location")}
           >
             <option className="d-none" value="Location">
               Location
@@ -134,11 +129,7 @@ const AddProjects = () => {
             onBlur={handleOnBlur}
             variant="outlined"
           />
-          <select
-            onChange={handleChangeType}
-            className="w-100 px-2 py-3 my-1"
-            // {...register("type")}
-          >
+          <select onChange={handleChangeType} className="w-100 px-2 py-3 my-1">
             <option className="d-none" value="Type">
               Type
             </option>
