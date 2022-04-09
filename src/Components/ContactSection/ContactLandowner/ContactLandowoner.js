@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
@@ -8,9 +9,16 @@ import NavBars from '../../Shared/NavBars/NavBars';
 import './ContactLandowoner.css'
 const ContactLandowoner = () => {
 
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
-
+    const { register, handleSubmit,reset } = useForm();
+    const onSubmit = data =>{
+        const url = 'http://localhost:5000/landWoner'
+          axios.post(url, data)
+          .then(res=>{
+              if(res.data.insertedId){
+                alert('We recived your land information. Thank you')
+                  reset();
+              }
+          })}
     return (
         <div>
             <NavBars/>

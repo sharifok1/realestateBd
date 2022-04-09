@@ -8,9 +8,18 @@ import handShak from '../../../asset/handShak.jpg'
 import { useForm } from "react-hook-form";
 import './JointVenture.css'
 import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
+import axios from 'axios';
 const JointVenture = () => {
-    const { register, handleSubmit } = useForm();
-  const onSubmit = data => console.log(data);
+    const { register, handleSubmit,reset } = useForm();
+    const onSubmit = data =>{
+        const url = 'http://localhost:5000/contactRequest'
+        axios.post(url, data)
+        .then(res=>{
+            if(res.data.insertedId){
+                alert('We recived your contact Request. Thank you')
+                reset();
+            }
+        })}
 
     return (
         <div>
@@ -56,7 +65,7 @@ const JointVenture = () => {
                   
                    </div>
                    
-                    
+                   {/* contactRequest */}
                 </form>
 
                 </div>
