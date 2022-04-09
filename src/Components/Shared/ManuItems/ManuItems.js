@@ -55,13 +55,13 @@ const ManuItems = () => {
                   </NavLink>
                   <ul class="sub-menu">
                     <li>
-                      <a href="@">Ongoing</a>
+                      <a href="/ongoing">Ongoing</a>
                     </li>
                     <li>
-                      <a href="@">Upcoming</a>
+                      <a href="/upcoming">Upcoming</a>
                     </li>
                     <li>
-                      <a href="@">Completed</a>
+                      <a href="/completed">Completed</a>
                     </li>
                   </ul>
                 </li>
