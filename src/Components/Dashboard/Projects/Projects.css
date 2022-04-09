@@ -1,0 +1,11 @@
+.project-explore-btn {
+  /* position: absolute; */
+  padding: 5px 20px;
+  font-size: large;
+  background-color: #fff;
+  border: 2px solid #000;
+  font-weight: 500;
+  margin-top: 20px;
+  transition: 0.5s;
+  bottom: 20px;
+}
