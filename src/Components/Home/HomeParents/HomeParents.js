@@ -20,8 +20,7 @@ const HomeParents = () => {
              <Featured/>
              <Slogan/>
              <Footer/>
-             <FbMsgChat/>
-            
+             <FbMsgChat/> 
         </div>
     );
 };
