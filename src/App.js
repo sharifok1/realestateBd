@@ -23,9 +23,12 @@ import Projects from "./Components/Dashboard/Projects/Projects";
 // import ApponitmentReq from "./Components/Dashboard/AppointmentReq/ApponitmentReq";
 
 import HomeParents from "./Components/Home/HomeParents/HomeParents";
+import Completed from "./Components/Projects/Completed/Completed";
+import Ongoing from "./Components/Projects/Ongoing/Ongoing";
 import ProjectDetails from "./Components/Projects/ProjectDetails/ProjectDetails";
 
 import ProjectsParents from "./Components/Projects/ProjectsParents/ProjectsParents";
+import UpComing from "./Components/Projects/UpComing/UpComing";
 import JointVenture from "./Components/Services/JointVenture/JointVenture";
 import OwnedLand from "./Components/Services/OwnedLand/OwnedLand";
 import FbMsgChat from "./Components/Shared/FbMessengerChat/FbMsgChat";
@@ -33,7 +36,7 @@ import FbMsgChat from "./Components/Shared/FbMessengerChat/FbMsgChat";
 function App() {
   return (
     <div className="App">
-     {/* <Routes>
+      {/* <Routes>
      <Route path="/" element={<HomeParents/>}/>
      <Route path="/projectsParents" element={<ProjectsParents/>}/>
      <Route path="/details/:detailsId" element={<ProjectDetails/>}/>
@@ -52,7 +55,6 @@ function App() {
 
     </Routes> */}
 
-
       <Routes>
         <Route path="/" element={<HomeParents />} />
         <Route path="/home" element={<HomeParents />} />
@@ -67,9 +69,12 @@ function App() {
         <Route path="/career" element={<CaareerParents />} />
         <Route path="/jobDetails/:jobId" element={<JobDetails />} />
         <Route path="/contact" element={<ContactMain />} />
-        <Route path="/customerChat" element={<FbMsgChat/>}/>
+        <Route path="/customerChat" element={<FbMsgChat />} />
         <Route path="/contactLandowoner" element={<ContactLandowoner />} />
         <Route path="/contactBuyer" element={<ContactBuyer />} />
+        <Route path="/ongoing" element={<Ongoing />} />
+        <Route path="/completed" element={<Completed />} />
+        <Route path="/upcoming" element={<UpComing />} />
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="" element={<JobPost />} />
           <Route path="jobPost" element={<JobPost />} />
@@ -78,10 +83,10 @@ function App() {
           <Route path="addBlogData" element={<AddBlogData />} />
           <Route path="addJobPost" element={<AddJobPost />} />
           <Route path="addProjects" element={<AddProjects />} />
-          <Route path="apponitmentReq" element={<ApponitmentReq/>}/>
-          <Route path="contactRequest" element={<ContactRequest/>}/>
-          <Route path="landOwner" element={<LandOwner/>}/>
-          <Route path="buyer" element={<Buyer/>}/>
+          <Route path="apponitmentReq" element={<ApponitmentReq />} />
+          <Route path="contactRequest" element={<ContactRequest />} />
+          <Route path="landOwner" element={<LandOwner />} />
+          <Route path="buyer" element={<Buyer />} />
         </Route>
       </Routes>
     </div>
