@@ -23,6 +23,9 @@ import AddBlogData from "../AddBlogData/AddBlogData";
 import AddJobPost from "../AddJobPost/AddJobPost";
 import AddProjects from "../AddProjects/AddProjects";
 import ApponitmentReq from "../AppointmentReq/ApponitmentReq";
+import ContactRequest from "../ContactRequest/ContactRequest";
+import LandOwner from "../LandOwner/LandOwner";
+import Buyer from "../Buyer/Buyer";
 
 const drawerWidth = 240;
 
@@ -127,6 +130,7 @@ function Dashboard(props) {
             </ListItemText>
           </ListItem>
         </Link>
+
         <Link
           className="fw-bold"
           style={{ textDecoration: "none", color: "GrayText" }}
@@ -136,6 +140,47 @@ function Dashboard(props) {
             <ListItemText>
               <span className="fw-bold">
                 <i className="fas fa-users-cog"></i> Appoinment List
+              </span>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link
+          className="fw-bold"
+          style={{ textDecoration: "none", color: "GrayText" }}
+          to="/dashboard/contactRequest"
+        >
+          <ListItem button>
+            <ListItemText>
+              <span className="fw-bold">
+                <i className="fas fa-users-cog"></i>ContactRequest
+              </span>
+            </ListItemText>
+          </ListItem>
+        </Link>
+
+        <Link
+          className="fw-bold"
+          style={{ textDecoration: "none", color: "GrayText" }}
+          to="/dashboard/landOwner"
+        >
+          <ListItem button>
+            <ListItemText>
+              <span className="fw-bold">
+                <i className="fas fa-users-cog"></i>LandOwner
+              </span>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        
+        <Link
+          className="fw-bold"
+          style={{ textDecoration: "none", color: "GrayText" }}
+          to="/dashboard/buyer"
+        >
+          <ListItem button>
+            <ListItemText>
+              <span className="fw-bold">
+                <i className="fas fa-users-cog"></i>Buyer
               </span>
             </ListItemText>
           </ListItem>
@@ -229,6 +274,9 @@ function Dashboard(props) {
           <Route path="addJobPost" element={<AddJobPost />} />
           <Route path="addProjects" element={<AddProjects />} />
           <Route path="apponitmentReq" element={< ApponitmentReq/>}/>
+          <Route path="contactRequest" element={< ContactRequest/>}/>
+          <Route path="landOwner" element={<LandOwner/>}/>
+          <Route path="buyer" element={<Buyer/>}/>
         </Routes>
       </Box>
     </Box>

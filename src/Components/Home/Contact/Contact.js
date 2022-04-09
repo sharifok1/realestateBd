@@ -12,7 +12,7 @@ const Contact = () => {
           axios.post(url, data)
           .then(res=>{
               if(res.data.insertedId){
-                  alert('student added successfully confirmed')
+                alert('We recived your contact information. Thank you')
                   reset();
               }
           })}

@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
@@ -9,8 +10,16 @@ import './ContactBuyer.css'
 
 const ContactBuyer = () => {
 
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit,reset } = useForm();
+    const onSubmit = data =>{
+        const url = 'http://localhost:5000/buyer'
+          axios.post(url, data)
+          .then(res=>{
+              if(res.data.insertedId){
+                alert('We recived your information. Thank you')
+                  reset();
+              }
+          })}
 
     return (
         <div>

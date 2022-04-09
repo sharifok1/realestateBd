@@ -8,7 +8,30 @@ const ApponitmentReq = () => {
         .then(res=>res.json())
         .then(data=>setAppointmets(data))
     },[])
-    console.log(appointments)
+
+
+    const handleDeleteAppoinment = (id) => {
+        const proceed = window.confirm("Are you sure, you want to delete?", id);
+        console.log(id);
+        if (proceed) {
+          const url = `http://localhost:5000/appoinment/${id}`;
+          fetch(url, {
+            method: "DELETE",
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              if (data.deletedCount > 0) {
+                console.log(id);
+                alert("Deleted Successfully!");
+                const remainingProducts = appointments.filter(
+                  (product) => product._id !== id
+                );
+                setAppointmets(remainingProducts);
+              }
+            });
+        }
+      };
+
     return (
         <div className='text-dark'>
             <h1>Appoinment Request</h1>
@@ -24,7 +47,9 @@ const ApponitmentReq = () => {
                                <h6>Phone Number: {appointment?.PhoneNum}</h6>
                                <h6>Email:{appointment?.email}</h6>
                                <h6>Time: {appointment?.time}</h6>
-                               <button className='job-details-btn'>Delete</button>    
+                               <button className='job-details-btn' 
+                               onClick={() => handleDeleteAppoinment(appointment._id)}
+                               >Delete</button>    
                         </div>
                         </Col>
                         
