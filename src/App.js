@@ -14,8 +14,11 @@ import AddProjects from "./Components/Dashboard/AddProjects/AddProjects";
 import ApponitmentReq from "./Components/Dashboard/AppointmentReq/ApponitmentReq";
 // import './App.css';
 import BlogData from "./Components/Dashboard/BlogData/BlogData";
+import Buyer from "./Components/Dashboard/Buyer/Buyer";
+import ContactRequest from "./Components/Dashboard/ContactRequest/ContactRequest";
 import Dashboard from "./Components/Dashboard/Dashboard/Dashboard";
 import JobPost from "./Components/Dashboard/JobPost/JobPost";
+import LandOwner from "./Components/Dashboard/LandOwner/LandOwner";
 import Projects from "./Components/Dashboard/Projects/Projects";
 // import ApponitmentReq from "./Components/Dashboard/AppointmentReq/ApponitmentReq";
 
@@ -75,7 +78,10 @@ function App() {
           <Route path="addBlogData" element={<AddBlogData />} />
           <Route path="addJobPost" element={<AddJobPost />} />
           <Route path="addProjects" element={<AddProjects />} />
-          <Route path="apponitmentReq" element={< ApponitmentReq/>}/>
+          <Route path="apponitmentReq" element={<ApponitmentReq/>}/>
+          <Route path="contactRequest" element={<ContactRequest/>}/>
+          <Route path="landOwner" element={<LandOwner/>}/>
+          <Route path="buyer" element={<Buyer/>}/>
         </Route>
       </Routes>
     </div>

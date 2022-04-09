@@ -7,9 +7,18 @@ import handShak from '../../../asset/handShak.jpg';
 import './ContactMain.css'
 import Faq from './Faqs/Faq';
 import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
+import axios from 'axios';
 const ContactMain = () => {
-    const { register, handleSubmit } = useForm();
-  const onSubmit = data => console.log(data);
+    const { register, handleSubmit,reset } = useForm();
+    const onSubmit = data =>{
+        const url = 'http://localhost:5000/contactRequest'
+          axios.post(url, data)
+          .then(res=>{
+              if(res.data.insertedId){
+                alert('We recived your contact information. Thank you')
+                  reset();
+              }
+          })}
     return (
         <div>
             <NavBars/>
