@@ -5,6 +5,7 @@ import Footer from '../../Shared/Footer/Footer';
 import NavBars from '../../Shared/NavBars/NavBars';
 import './BlogDetails.css';
 import { useForm } from "react-hook-form";
+import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
 const BlogDetails = () => {
     const { register, handleSubmit } = useForm();
   const onSubmit = data => console.log(data);
@@ -86,6 +87,7 @@ const BlogDetails = () => {
             </Container>
 
             <Footer/>
+            <FbMsgChat/>
         </div>
     );
 };

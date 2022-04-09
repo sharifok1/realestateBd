@@ -7,6 +7,7 @@ import jointBanner from '../../../asset/jointBanner.jpg'
 import handShak from '../../../asset/handShak.jpg'
 import { useForm } from "react-hook-form";
 import './JointVenture.css'
+import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
 const JointVenture = () => {
     const { register, handleSubmit } = useForm();
   const onSubmit = data => console.log(data);
@@ -67,6 +68,7 @@ const JointVenture = () => {
             </Container>
             </div>
             <Footer/>
+            <FbMsgChat/>
         </div>
     );
 };

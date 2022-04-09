@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { ProgressBar } from 'react-bootstrap';
+import { Container, ProgressBar } from 'react-bootstrap';
 
 import { Link, NavLink, useParams } from 'react-router-dom';
+import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
 import Footer from '../../Shared/Footer/Footer';
 import NavBars from '../../Shared/NavBars/NavBars';
 import ProjectSlider from '../../Shared/Slider/ProjectSlider';
@@ -115,9 +116,12 @@ const ProjectDetails = () => {
                     }}
                     >RELATED PROJECTS
                     </h1>
-            <ProjectSlider project={projectId}></ProjectSlider>
+                    <Container>
+                    <ProjectSlider project={projectId}></ProjectSlider>
+                    </Container>
             </div>
            <Footer></Footer>
+           <FbMsgChat/>
         </div>
     );
 };

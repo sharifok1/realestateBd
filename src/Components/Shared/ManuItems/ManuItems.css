@@ -90,11 +90,17 @@
 }
 .buildingTec {
   position: absolute;
-  top: 15%;
-  left: 180px;
+  top: 10%;
+  /* left: 180px; */
+  left: 150px;
 }
+<<<<<<< HEAD
+.buildingTec img{
+  width: 70%;
+=======
 .buildingTec img {
   width: 60%;
+>>>>>>> 22610282f6e2b90655764c39228eaacba1c76559
   animation-name: buildingMoved;
   animation-direction: alternate-reverse;
   animation-duration: 10s;
@@ -262,8 +268,13 @@ nav a {
   padding: 0.5em 1em;
   text-decoration: none;
 }
+<<<<<<< HEAD
+nav a:hover { 
+  color:#aaa; 
+=======
 nav a:hover {
   color: blue;
+>>>>>>> 22610282f6e2b90655764c39228eaacba1c76559
 }
 nav ul,
 nav ul li {

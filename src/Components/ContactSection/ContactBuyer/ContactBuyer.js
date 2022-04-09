@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Fade } from 'react-reveal';
+import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
 import Footer from '../../Shared/Footer/Footer';
 import NavBars from '../../Shared/NavBars/NavBars';
 import './ContactBuyer.css'
@@ -82,6 +83,7 @@ const ContactBuyer = () => {
                 </form>
            </Container>
            <Footer/>
+           <FbMsgChat/>
         </div>
     );
 };

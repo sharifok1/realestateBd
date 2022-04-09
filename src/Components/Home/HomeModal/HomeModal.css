@@ -1,19 +1,16 @@
 @import url("http://fonts.cdnfonts.com/css/sofia-pro");
-.modal-image{
+.modal-three-Card{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home-modal-img{
+  width: 100%;
+}
+/* .modal-image{
     height: 30rem;
-}
-.modal-text{
-    position: absolute;
-    bottom: 150px;
-    left: 20px;
-         background-image: linear-gradient(
-        to right,
-        #54b3d6,
-        #54b3d6 50%,
-        rgb(255, 247, 247) 100%
-      );
-}
-.modal-text h1{
+} */
+/* .modal-text h1{
     font-family:'sofia-pro';
     font-size: 30px;
     font-weight: 800;
@@ -22,33 +19,9 @@
     font-family:'sofia-pro';
     font-size: 20px;
     font-weight: 800;
-    /* background-color: rgba(0, 0, 0, 0.425) !important; */
-}
-.modal-text{
-    
-    background-image: linear-gradient(
-    to right,
-    #54b3d6,
-    #54b3d6 50%,
-    #000 50%
-  );
-  background-size: 200% 100%;
-  background-position: -100%;
-}
-.modal-text{
-    
-    background-image: linear-gradient(
-        to right,
-        #54b3d6,
-        #54b3d6 50%,
-        #000 50%
-      );
-      background-size: 200% 100%;
-      background-position: -100%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-}
-.modal-text:before{
+} */
+
+/* .modal-text:before{
     content: '';
     background: #09008a;
     display: block;
@@ -57,30 +30,17 @@
     left: 0;
     width: 0;
     height: 3px;
-}
-.modal-text:hover{
+} */
+/* .modal-text:hover{
   
     background-position: 0;
-}
+} */
 .modal-text:hover::before{
     width: 100%;
     
 }
-.modal-text {
-   
-    background-image: linear-gradient(
-      to right,
-      #0a0064,
-      #0c14f4 50%,
-      rgb(255, 255, 255) 50%
-    );
-    background-size: 200% 100%;
-    background-position: -100%;
-    /* -webkit-background-clip: text; */
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-  }
-  .modal-explore-btn{
+
+  /* .modal-explore-btn{
       font-size: large;
       font-weight: 7000;
       color:#fff;
@@ -92,7 +52,7 @@
       font-weight: 800;
       background-color: rgba(0, 0, 0, 0.562);
       left: 20px;
-  }
+  } */
   .modal-explore-btn:hover{
       background-color: #09008a9f;
       transition: .5s;
@@ -100,28 +60,56 @@
   .modal-card-col{
     overflow: hidden;
   }
-  .modal-image{
+  /* .modal-image{
     transition: transform 2s;
-  }
-  .modal-image:hover {
+  } */
+  /* .modal-image:hover {
   -ms-transform: scale(1.3); 
   -webkit-transform: scale(1.3); 
    transform: scale(1.3); 
-  }
+  } */
 
 /* //modal style// */
 
 
+.modal-card-col{
+  width: auto;
+}
 
-
-
+.ReactModal__Content{
+  position: absolute !important;
+  top: 80px !important;
+  padding-top: 40px !important;
+  margin: 10px 60px !important;
+}
 /*  */
-
+.modal-allExplore-btn{
+  background-color: transparent;
+ padding: 8px 20px;
+ font-weight: 600;
+ outline: none;
+ border: 2px solid #000;
+ transition: 1s;
+ margin-top: 10px !important;
+}
+.modal-allExplore-btn:hover{
+  background-color:rgb(41, 102, 176);
+  color: #fff;
+  transition: 1s;
+}
  @media only screen and (max-width:768px){
-  .modal-text h1{
-    font-size: 25x;
+  .modal-text{
+    font-size: 35x !important;
   }
   .modal-image{
     width:100%;
   }
+  .ReactModal__Content {
+    position: absolute !important;
+    top: 80px !important;
+    margin: 0 auto !important;
+    width: 95% !important;
+    left: 2.5% !important;
+    top: 70px !important;
+}
  }

@@ -17,7 +17,7 @@
   }
   
   .swiper-slide {
-      margin-top: 50px;
+      margin-top: 90px;
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -115,7 +115,51 @@
     left: 20px;
     border: 2px solid #fff;
 }
-.swiper-button-next,
+.swiper-button-prev:after {
+    /* font-family: swiper-icons; */
+    position: absolute !important;
+    content: "←" !important;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    text-transform: none;
+    color:#000 !important;
+    font-weight: 800;
+    background-color: #fff;
+    border-radius: 50%;
+    padding-top: 2px;
+    padding-left: 5px;
+    font-variant: initial;
+    line-height:1;
+    border: 2px solid #000;
+    height: 60px;
+    width: 60px;
+    padding-bottom: 8px;
+    left: 5% !important;
+    top: -320px;
+}
+.swiper-button-next:after {
+    /* font-family: swiper-icons; */
+    position: absolute !important;
+    content: "→" !important;
+    color:#000 !important;
+    font-weight: 800;
+    background-color: #fff;
+    border-radius: 50%;
+    padding-top: 2px;
+    padding-left: 5px;
+    font-variant: initial;
+    line-height:1;
+    border: 2px solid #000;
+    height: 60px;
+    width: 60px;
+    padding-bottom: 8px;
+    right: 65vw;
+    margin-right: 5% !important;
+
+    top: -320px;
+}
+/* .swiper-button-next,
 .swiper-button-prev {
     background-color: white;
   
@@ -134,8 +178,8 @@
     overflow: hidden;
     top:0px !important;
     
-}
-.swiper-button-next{
+} */
+/* .swiper-button-next{
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
     background-position:right;
     background-position:center;
@@ -150,8 +194,7 @@
     background-position-x:left !important;
     background-size:cover;
     left: 20px !important;
-    /* left:100px !important; */
-}
+} */
 
 
 /* animation button secondary// */
@@ -180,4 +223,24 @@
   .btn-secondary:hover::after {
     width: 100%;
   }
-  
+  @media only screen and (max-width:979px){
+    .swiper-button-prev:after {
+        height: 45px;
+        width: 45px;
+        font-size:35px ;
+        top: -304px;
+        padding-right: 5px;
+        padding-top: 0;
+        padding-left: 2px;
+    }
+    .swiper-button-next:after {
+        height: 45px;
+        width: 45px;
+        font-size:35px ;
+        top: -304px;
+        padding-right: 5px;
+        padding-top: 0;
+        padding-left: 2px;
+        right: 60vw;
+    }
+  }

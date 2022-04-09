@@ -1,3 +1,32 @@
+<<<<<<< HEAD
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './ManuItems.css'
+import  building from '../../../asset/buildingTech.png'
+import  brand from '../../../asset/brand.jpg'
+
+const ManuItems = () => {
+    return (
+        <div >
+            <main id='#'>
+                 <input type="checkbox" id="myInput"/> 
+                    <label for="myInput">
+                        <span class="bar top"></span>
+                        <span class="bar middle"></span>
+                        <span class="bar bottom"></span>
+                        </label>
+                    <aside>
+                        <div class="aside-section aside-left">
+                            <div className='buildingTec'>
+                                <img src={brand} alt="" />
+                            </div>
+                        <a href="tel:0123" className='make-call-btn'><i class="fa-solid fa-circle-phone"></i> TALK WITH OUR TEAM</a>
+                           <div class="aside-content">
+                                <p className='aside-contact-head'>CONTACT</p>
+                               <p> PHONE: +88018********</p>
+                               <p>EMAIL: domicileltdweb@gmail.com</p>
+                               <p>HOURS: 9am - 4pm MONDAY-FRIDAY</p> 
+=======
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./ManuItems.css";
@@ -28,6 +57,7 @@ const ManuItems = () => {
               <p>HOURS: 9am - 4pm MONDAY-FRIDAY</p>
             </div>
           </div>
+>>>>>>> 22610282f6e2b90655764c39228eaacba1c76559
 
           <div class="aside-section aside-right">
             <nav>

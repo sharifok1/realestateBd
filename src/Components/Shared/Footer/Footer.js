@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='footer'>
            <div className='footer-1st-part'>
                <div className='footer-brand'>
-                   <img className='img-fluid footer-brand-logo' src='https://svgshare.com/i/g4Z.svg' alt="" />
+                   <NavLink to="/"><img className='img-fluid footer-brand-logo' src='https://svgshare.com/i/g4Z.svg' alt="" /></NavLink>
                </div>
                <div>
                    <ul>

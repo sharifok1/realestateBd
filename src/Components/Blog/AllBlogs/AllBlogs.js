@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
 import { Link } from 'react-router-dom';
+import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
 import Footer from '../../Shared/Footer/Footer';
 import NavBars from '../../Shared/NavBars/NavBars';
 import './AllBlogs.css'
@@ -55,6 +56,7 @@ const AllBlogs = () => {
 
 
            <Footer/>
+           <FbMsgChat/>
         </div>
     );
 };

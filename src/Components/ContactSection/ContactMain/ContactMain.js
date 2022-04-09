@@ -6,6 +6,7 @@ import NavBars from '../../Shared/NavBars/NavBars';
 import handShak from '../../../asset/handShak.jpg';
 import './ContactMain.css'
 import Faq from './Faqs/Faq';
+import FbMsgChat from '../../Shared/FbMessengerChat/FbMsgChat';
 const ContactMain = () => {
     const { register, handleSubmit } = useForm();
   const onSubmit = data => console.log(data);
@@ -95,6 +96,7 @@ const ContactMain = () => {
             
 
         <Footer/>
+        <FbMsgChat/>
         </div>
     );
 };
