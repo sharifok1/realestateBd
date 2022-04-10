@@ -15,7 +15,7 @@ const Featured = () => {
            <Container>
               <div className='text-start px-3'>
                 <Fade left>
-                    <p className="about-sub-title">FEATURED PROJECTS</p>
+                    <p className="about-sub-title ">FEATURED PROJECTS</p>
                     </Fade>
                       <Fade left>
                       <div>

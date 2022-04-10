@@ -1,6 +1,7 @@
 import React from 'react';
 import {  Navbar } from 'react-bootstrap';
 import ManuItems from '../ManuItems/ManuItems';
+import brand from '../../../asset/brand/brand.png'
 import './NavBars.css'
 
 const NavBars = () => {
@@ -10,7 +11,7 @@ const NavBars = () => {
                 <Navbar.Brand href="/">
                   <img
                   className='brand-logo img-fluid'
-                  src="https://svgshare.com/i/g4Z.svg" alt="" />
+                  src={brand} alt="" />
                 </Navbar.Brand>
             </Navbar>
             <ManuItems></ManuItems>

@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import { Container } from 'react-bootstrap';
-import { useForm } from 'react-hook-form';
 import applyImg from '../../../asset/applyImg.jpg'
 import TextField from '@mui/material/TextField';
 import {Input} from '@mui/material';
@@ -15,28 +14,34 @@ const JobApply = () => {
     const [resume, setResume] = useState(null);
 console.log(resume)
     // const { register, handleSubmit } = useForm();
-    const handleSubmit = e =>{
+    const uploader = e =>{
         // e.preventDefault();
+        // e.preventDefault();
+        if(!resume){
+            return;
+        }
         const formData = new FormData();
-        formData.append(names,'names')
-        formData.append(number,'number')
-        formData.append(email,'email')
-        formData.append(position,'position')
-        formData.append(exp,'exp')
-        formData.append(resume,'resume');
-
+        formData.append('names', names);
+        formData.append('number', number);
+        formData.append('email', email);
+        formData.append('position', position);
+        formData.append('exp', exp);
+        formData.append('resume', resume);
         fetch('https://secure-cove-36711.herokuapp.com/application', {
             method: 'POST',
             body: formData
-          })
-          .then(response => response.json())
-          .then(result => {
-            console.log('Success:', result);
-          })
-          .catch(error => {
+            })
+            .then(res => res.json())
+            .then(data => {
+            if('Success:',data){
+                alert('Application successfully done')
+            }
+           
+            })
+            .catch(error => {
             console.error('Error:', error);
-          })};
-
+            });
+    }
     // const onSubmit = data =>setJobdata(data);
     // console.log(jobdata)
    
@@ -50,7 +55,8 @@ console.log(resume)
                 <h1 className='joint-contact-heading'>Apply Now</h1>
             <div className='jointVentureContuct'>
                 <div className='left'>
-                <form onSubmit={handleSubmit()}>
+
+                <form onSubmit={()=>uploader()}>
                    <div className='venture-contactUs-wraper pt-5'>
                    <TextField  
                      style={{

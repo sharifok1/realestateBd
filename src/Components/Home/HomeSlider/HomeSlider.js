@@ -59,7 +59,7 @@ const HomeSlider = () => {
             </video>
             <div className='banner-heading'>
               <p>
-              Enthralling you with scintillating landscape
+              {/* Enthralling you with scintillating landscape */}
               </p>
               <svg class="svg-text" viewBox="0 0 800 60">
 	<symbol id="s-text">
@@ -83,9 +83,9 @@ const HomeSlider = () => {
  <div className='slider-nave'>
    <div className='silde-nave-1'><NavLink to="/projectsParents" ><i class="fa-solid fa-building-shield"></i><span id='silde-nave-1'> EXPLORE PROJECTS</span></NavLink></div>
    <div> <i class="fa-solid fa-angles-right"></i> </div>
-   <div><NavLink to="/projects" > <span className='slide-nav-items'>ONNGOING</span> </NavLink></div>
-   <div><NavLink to="/projects" > <span className='slide-nav-items'>COMPLETED</span> </NavLink></div>
-   <div><NavLink to="/projects" > <span className='slide-nav-items'> UPCOMING</span></NavLink></div>
+   <div><NavLink to="/ongoing" > <span className='slide-nav-items'>ONNGOING</span> </NavLink></div>
+   <div><NavLink to="/completed" > <span className='slide-nav-items'>COMPLETED</span> </NavLink></div>
+   <div><NavLink to="/upcoming" > <span className='slide-nav-items'> UPCOMING</span></NavLink></div>
  </div>
 </div>
       

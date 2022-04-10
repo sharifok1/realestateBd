@@ -18,19 +18,19 @@ height: 80px !important;
   position: static;
 }
 .brand-logo{
-  width: 12%;
-  background-color: aliceblue;
+  width: 40%;
+  /* background-color: aliceblue; */
 }
 @media only screen and (max-width:979px){
   .brand-logo{
-    width: 20%;
-    background-color: aliceblue;
+    width: 30%;
+    /* background-color: aliceblue; */
   }
 }
 @media only screen and (max-width:779px){
   .brand-logo{
-    width: 25%;
-    background-color: aliceblue;
+    width: 30%;
+    /* background-color: aliceblue; */
     
   }
   .navbar{
@@ -41,6 +41,6 @@ height: 80px !important;
 @media only screen and (max-width:500px){
   .brand-logo{
     width: 40%;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
   }
 }

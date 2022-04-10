@@ -204,15 +204,16 @@ const AddProjects = () => {
           <TextField
             sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
-            label="Project Image"
+            label="Url Project Image"
             name="projectImage"
             onBlur={handleOnBlur}
             variant="outlined"
+            required
           />
           <TextField
             sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
-            label="Image 1"
+            label="Url for img 1"
             name="img1"
             onBlur={handleOnBlur}
             variant="outlined"
@@ -220,7 +221,7 @@ const AddProjects = () => {
           <TextField
             sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
-            label="Image 2"
+            label="Url for img 2"
             name="img2"
             onBlur={handleOnBlur}
             variant="outlined"
@@ -228,7 +229,7 @@ const AddProjects = () => {
           <TextField
             sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
-            label="Image 3"
+            label="Url for img 3"
             name="img3"
             onBlur={handleOnBlur}
             variant="outlined"
@@ -244,10 +245,11 @@ const AddProjects = () => {
           <TextField
             sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
-            label="Project Progress"
+            label="Project Progress out of 100"
             name="projectProgress"
             onBlur={handleOnBlur}
             variant="outlined"
+             type='number'
           />
           <TextField
             sx={{ width: "100%", my: 1 }}
@@ -256,6 +258,7 @@ const AddProjects = () => {
             name="numberofFloors"
             onBlur={handleOnBlur}
             variant="outlined"
+            type='number'
           />
 
           <Button

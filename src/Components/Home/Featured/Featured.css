@@ -15,6 +15,11 @@
     z-index: 0;
     /* paddi: 50px; */
   }
+  .about-sub-title{
+      color: #777;
+      font-weight: 600;
+      font-size: large;
+  }
   
   .swiper-slide {
       margin-top: 90px;
@@ -159,42 +164,6 @@
 
     top: -320px;
 }
-/* .swiper-button-next,
-.swiper-button-prev {
-    background-color: white;
-  
-    right:10px;
-    padding: 30px;
-    color: rgb(255, 255, 255) !important;
-    border-radius: 50%;
-    position: absolute !important;
-    top:-10px !important;
-    height: 40px !important;
-    width: 40px !important;
-    padding: 10px;
-    margin-top: 3px;
-    margin-bottom: 10px !important;
-   box-shadow: 0 0 2px 2px #000;
-    overflow: hidden;
-    top:0px !important;
-    
-} */
-/* .swiper-button-next{
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
-    background-position:right;
-    background-position:center;
-    background-position-x:left !important;
-    background-size:cover;
-    left: 80px;
-}
-.swiper-button-prev {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
-    background-position:right;
-    background-position:center;
-    background-position-x:left !important;
-    background-size:cover;
-    left: 20px !important;
-} */
 
 
 /* animation button secondary// */
