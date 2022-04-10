@@ -50,7 +50,7 @@ const HomeModal = () => {
                      
                   <Row xs={1} md={1} lg={3}  className="modal-three-Card">
                   {
-                    projects.map((project)=><div
+                    projects?.slice(0,3).map((project)=><div
                     key={project._id}
                     >
                      <Col>

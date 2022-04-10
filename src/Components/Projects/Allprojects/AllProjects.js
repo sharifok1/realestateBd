@@ -104,7 +104,7 @@ const AllProjects = () => {
               <div key={project.id}>
                 <Col className="slider-card">
                   <img
-                    className="slider-card-img img-fluid"
+                    className="slider-card-img img-fluid w-100"
                     src={project.projectImage}
                     alt=""
                   />
