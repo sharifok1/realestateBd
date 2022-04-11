@@ -62,7 +62,7 @@ const HomeModal = () => {
                                     <div className="mb-4">
                                         <div className="card-name">
                                           <h1 className="card-heading pb-0 mb-0 fs-2">{project?.projectName}</h1>
-                                          <h3  className='pb-md-5 pb-xm-0' >{project?.location}</h3>
+                                          <h3  className='pb-md-0 pb-xm-0' >{project?.location}</h3>
                                         </div>
                                           <p>
                                             {project?.description.slice(0,120)}...
