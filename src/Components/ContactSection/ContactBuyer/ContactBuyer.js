@@ -12,7 +12,7 @@ const ContactBuyer = () => {
 
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data =>{
-        const url = 'http://localhost:5000/buyer'
+        const url = 'https://secure-cove-36711.herokuapp.com/buyer'
           axios.post(url, data)
           .then(res=>{
               if(res.data.insertedId){

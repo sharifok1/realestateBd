@@ -12,7 +12,7 @@ const BlogDetails = () => {
 
     const [details, setDetails] = useState([]);
     useEffect(()=>{
-    const url = '../blogData.json';
+    const url = 'https://secure-cove-36711.herokuapp.com/blogData';
       fetch(url)
      .then(res=>res.json())
      .then(data=> setDetails(data))
@@ -21,7 +21,7 @@ const BlogDetails = () => {
    
     const {blogId} = useParams()
    
-       const fullBlog = details?.find((projectDetals)=>projectDetals.id === blogId);
+       const fullBlog = details?.find((projectDetals)=>projectDetals._id === blogId);
       console.log(fullBlog);
     return (
         <div>
@@ -60,15 +60,15 @@ const BlogDetails = () => {
                 </div>
                
                {/* comment section */}
-                <div className='text-dark w-80 border p-4'>
+                {/* <div className='text-dark w-80 border p-4'>
                     <div>
                         <h5>Md. Shariful Islam</h5>
                         <p>{fullBlog?.userComment}</p>
                     </div>
-                </div>
+                </div> */}
                 
                 {/* add comment// */}
-                <div>
+                {/* <div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                    <div className='blog-comment-form'>
                  <textarea  {...register("Comment")} placeholder="Comment" required/>
@@ -82,7 +82,7 @@ const BlogDetails = () => {
                    
                     
                 </form>
-                </div>
+                </div> */}
               </div>
             </Container>
 

@@ -12,13 +12,12 @@ const HomeModal = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(()=>{
-    // const url = './HomeModal.json';
-    //   fetch(url)
-    //  .then(res=>res.json())
-    //  .then(data=> )
-    setProjects([1,2,3])
-    console.log(projects)
+    const url = 'https://secure-cove-36711.herokuapp.com/projects';
+      fetch(url)
+     .then(res=>res.json())
+     .then(data=>setProjects(data))
     },[]);
+    console.log(projects)
     
     return (
         <div>
@@ -47,31 +46,31 @@ const HomeModal = () => {
                     <h5 className='text-dark' style={{fontWeight:'800',fontFamily:'sofia pro'}}>FEATURED PROJECTS
                     </h5>
                       </div>
-                      
+                     
                      
                   <Row xs={1} md={1} lg={3}  className="modal-three-Card">
                   {
-                    projects.map((project)=><div
-                    key={project.id}
+                    projects?.slice(0,3).map((project)=><div
+                    key={project._id}
                     >
                      <Col>
                         <Card style={{overflow:'hidden'}}>
                              <div className="slider-card">
-                              <img className="card-img-slider home-modal-img" style={{height:'450px'}} src={project1} alt="" />
+                              <img className="card-img-slider home-modal-img" style={{height:'450px'}} src={project?.projectImage} alt="" />
                               <div className="img-overlay"></div>
                               <div className="slider-text-div">
                                     <div className="mb-4">
                                         <div className="card-name">
-                                          <h1 className="card-heading pb-0 mb-0 fs-2">Edison RoseLand</h1>
-                                          <h3  className='pb-md-5 pb-xm-0' >Bashundara RA</h3>
+                                          <h1 className="card-heading pb-0 mb-0 fs-2">{project?.projectName}</h1>
+                                          <h3  className='pb-md-5 pb-xm-0' >{project?.location}</h3>
                                         </div>
                                           <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae earum eos repellat nisi mollitia soluta.
+                                            {project?.description.slice(0,120)}...
                                         </p>
                                         </div>       
                                     
                               </div>
-                              <NavLink to={`/details/${'p1'}`}>
+                              <NavLink to={`/details/${project._id}`}>
                               <button className="btn-secondary mb-4 mt-3 btn-position" variant="primary" style={{backgroundColor:'transparent !important'}}>Explore</button> 
                               </NavLink>
                               </div>

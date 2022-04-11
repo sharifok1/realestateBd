@@ -15,7 +15,7 @@ const ProjectSlider = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(()=>{
-  const url = 'http://localhost:3000/projects.json';
+  const url = 'https://secure-cove-36711.herokuapp.com/projects';
     fetch(url)
    .then(res=>res.json())
    .then(data=> setProjects(data))
@@ -80,7 +80,7 @@ console.log(projects)
                         </div>       
                     
                </div>
-               <NavLink to={`/details/${myProject?.id}`}>
+               <NavLink to={`/details/${myProject?._id}`}>
               <button className="btn-secondary mb-4 mt-3 btn-position" variant="primary" style={{backgroundColor:'transparent !important'}}>Explore</button> 
               </NavLink>
               </div>

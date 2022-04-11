@@ -26,7 +26,7 @@ const AddJobPost = () => {
     product = {
       ...blogDate,
     };
-    fetch("http://localhost:5000/jobPost", {
+    fetch("https://secure-cove-36711.herokuapp.com/jobPost", {
       method: "POST",
       headers: {
         "content-type": "application/json",

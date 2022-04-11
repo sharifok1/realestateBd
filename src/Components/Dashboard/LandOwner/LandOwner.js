@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 const LandOwner = () => {
     const [landOwner, setLandOwner] = useState([])
     useEffect(()=>{
-        const url = 'http://localhost:5000/landWoner'
+        const url = 'https://secure-cove-36711.herokuapp.com/landWoner'
         fetch(url)
         .then(res=>res.json())
         .then(data=>setLandOwner(data))
@@ -15,7 +15,7 @@ console.log(landOwner)
         const proceed = window.confirm("Are you sure, you want to delete?", id);
         console.log(id);
         if (proceed) {
-          const url = `http://localhost:5000/landWoner/${id}`;
+          const url = `https://secure-cove-36711.herokuapp.com/landWoner/${id}`;
           fetch(url, {
             method: "DELETE",
           })

@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./ManuItems.css";
 import building from "../../../asset/buildingTech.png";
+import brand from '../../../asset/brand.jpg'
 
 const ManuItems = () => {
   return (
@@ -16,7 +17,7 @@ const ManuItems = () => {
         <aside>
           <div class="aside-section aside-left">
             <div className="buildingTec">
-              <img src={building} alt="" />
+              <img src={brand} alt="" />
             </div>
             <a href="tel:0123" className="make-call-btn">
               <i class="fa-solid fa-circle-phone"></i> TALK WITH OUR TEAM

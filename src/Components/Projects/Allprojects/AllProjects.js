@@ -11,13 +11,13 @@ const AllProjects = () => {
   const [allProjects, setAllProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/projects")
+    fetch("https://secure-cove-36711.herokuapp.com/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .then(() => setIsLoading(false));
   }, []);
   useEffect(() => {
-    fetch("http://localhost:5000/projects")
+    fetch("https://secure-cove-36711.herokuapp.com/projects")
       .then((res) => res.json())
       .then((data) => setAllProjects(data))
       .then(() => setIsLoading(false));
@@ -104,7 +104,7 @@ const AllProjects = () => {
               <div key={project.id}>
                 <Col className="slider-card">
                   <img
-                    className="slider-card-img img-fluid"
+                    className="slider-card-img img-fluid w-100"
                     src={project.projectImage}
                     alt=""
                   />
@@ -120,7 +120,7 @@ const AllProjects = () => {
                       </p>
                     </div>
                   </div>
-                  <Link to={`/details/${project.id}`}>
+                  <Link to={`/details/${project._id}`}>
                     {" "}
                     <button
                       className="btn-secondary mb-4 mt-3 btn-position"

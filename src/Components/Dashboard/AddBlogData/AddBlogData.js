@@ -26,7 +26,7 @@ const AddBlogData = () => {
     product = {
       ...blogDate,
     };
-    fetch("http://localhost:5000/blogData", {
+    fetch("https://secure-cove-36711.herokuapp.com/blogData", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -106,7 +106,7 @@ const AddBlogData = () => {
           <TextField
             sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
-            label="Image 1"
+            label=" Url Image 1 (optional)"
             name="imgOne"
             onBlur={handleOnBlur}
             variant="outlined"
@@ -131,7 +131,7 @@ const AddBlogData = () => {
           <TextField
             sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
-            label="Image 2"
+            label=" Url Image 2 (optional)"
             name="imgTwo"
             onBlur={handleOnBlur}
             variant="outlined"
@@ -156,7 +156,7 @@ const AddBlogData = () => {
           <TextField
             sx={{ width: "100%", my: 1 }}
             id="outlined-basic"
-            label="Image 3"
+            label=" Url Image 3 (optional)"
             name="imgThree"
             onBlur={handleOnBlur}
             variant="outlined"

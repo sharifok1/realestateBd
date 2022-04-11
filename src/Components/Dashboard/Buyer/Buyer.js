@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 const Buyer = () => {
     const [buyer, setBuyer] = useState([])
     useEffect(()=>{
-        const url = 'http://localhost:5000/buyer'
+        const url = 'https://secure-cove-36711.herokuapp.com/buyer'
         fetch(url)
         .then(res=>res.json())
         .then(data=>setBuyer(data))
@@ -15,7 +15,7 @@ console.log(buyer)
         const proceed = window.confirm("Are you sure, you want to delete?", id);
         console.log(id);
         if (proceed) {
-          const url = `http://localhost:5000/buyer/${id}`;
+          const url = `https://secure-cove-36711.herokuapp.com/buyer/${id}`;
           fetch(url, {
             method: "DELETE",
           })

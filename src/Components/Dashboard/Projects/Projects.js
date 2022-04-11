@@ -10,13 +10,13 @@ const Projects = () => {
   const [allProjects, setAllProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/projects")
+    fetch("https://secure-cove-36711.herokuapp.com/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .then(() => setIsLoading(false));
   }, []);
   useEffect(() => {
-    fetch("http://localhost:5000/projects")
+    fetch("https://secure-cove-36711.herokuapp.com/projects")
       .then((res) => res.json())
       .then((data) => setAllProjects(data))
       .then(() => setIsLoading(false));
@@ -40,7 +40,7 @@ const Projects = () => {
     const proceed = window.confirm("Are you sure, you want to delete?", id);
     console.log(id);
     if (proceed) {
-      const url = `http://localhost:5000/projects/${id}`;
+      const url = `https://secure-cove-36711.herokuapp.com/projects/${id}`;
       fetch(url, {
         method: "DELETE",
       })

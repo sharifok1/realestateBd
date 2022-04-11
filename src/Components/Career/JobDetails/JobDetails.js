@@ -7,15 +7,15 @@ const JobDetails = () => {
 
     const [details, setDetails] = useState([]);
     useEffect(()=>{
-    const url = '../jobPost.json';
+    const url = 'https://secure-cove-36711.herokuapp.com/jobPost';
       fetch(url)
      .then(res=>res.json())
      .then(data=> setDetails(data))
     },[])
     const {jobId} = useParams()
-   
-       const fullJob = details?.find((jobDetails)=>jobDetails.id === jobId);
-      console.log(fullJob);
+   console.log(jobId)
+       const fullJob = details?.find((jobDetails)=>jobDetails._id === jobId);
+      console.log(details);
 
     return (
         <div>

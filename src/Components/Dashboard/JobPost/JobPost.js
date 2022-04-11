@@ -6,7 +6,7 @@ const JobPost = () => {
   const [jobPosts, setJobPosts] = useState();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/jobPost")
+    fetch("https://secure-cove-36711.herokuapp.com/jobPost")
       .then((res) => res.json())
       .then((data) => setJobPosts(data))
       .then(() => setIsLoading(false));
@@ -16,7 +16,7 @@ const JobPost = () => {
     const proceed = window.confirm("Are you sure, you want to delete?", id);
     console.log(id);
     if (proceed) {
-      const url = `http://localhost:5000/jobPost/${id}`;
+      const url = `https://secure-cove-36711.herokuapp.com/jobPost/${id}`;
       fetch(url, {
         method: "DELETE",
       })
