@@ -90,18 +90,20 @@
     padding-right: 50px;
     padding-left: 20px;
     transition: 1s ease-in-out .5s;
+    position: absolute;
+    bottom:-200px;
+    transition: .5s ease;
     z-index: 1;
+}
+.slider-text-div p{
+  min-height: 150px;
 }
 .card-heading{
     font-weight: 800;
     font-size: 35px;
     text-align: left;
 }
-.slider-text-div{
-    position: absolute;
-    bottom:-200px;
-    transition: .5s ease;
-}
+
  .card-name{
     margin-bottom: 180px;
     transition: .5s ease;

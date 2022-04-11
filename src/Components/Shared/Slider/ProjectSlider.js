@@ -72,7 +72,7 @@ console.log(projects)
                     <div className="mb-4">
                          <div className="card-name">
                            <h1 className="card-heading">{myProject?.projectName}</h1>
-                           <h3 >{myProject?.projectName}</h3>
+                           <h3 >{myProject?.location}</h3>
                          </div>
                           <p>
                           {myProject?.description.slice(0,150)} . . .
